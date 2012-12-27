@@ -10,8 +10,12 @@ function Hanzi(pinyin, hanzi, timestamp) {
 	}
 }
 
-Hanzi.prototype.representation = function() {
-	return this.pinyin + ": " + this.hanzi;
+Hanzi.prototype.representation = function(showHanzi) {
+	if (showHanzi) {
+		return this.pinyin + ": " + this.hanzi;
+	} else {
+		return this.pinyin;
+	}
 }
 
 function initializeHanzi() {
@@ -47,7 +51,7 @@ function initializeHanzi() {
 
 var HanziViewModel = function() {
     this.numberOfHanzi = ko.observable(2);
-	this.showSolution = ko.observable(false);
+	this.showSolution = false;
 
 	this.currentData = ko.observableArray(initializeHanzi());
 	this.currentSelection = ko.observableArray([]);
@@ -75,7 +79,6 @@ var HanziViewModel = function() {
 	};
 	
 	this.removeHanziElement = function(elem) {
-		// alert(elem);
 		$(elem).remove();
 	};
 	
