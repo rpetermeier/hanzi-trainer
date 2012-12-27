@@ -36,7 +36,7 @@
 			<input type="checkbox" id="show-hanzi" data-bind="checked: showSolution" /><label for="show-hanzi">Hanzi anzeigen</label>
 			</p>
 			<div data-bind='template: { foreach: generateData }'>
-				<div data-bind='text: representation'> </div>
+				<div data-bind='text: representation()'> </div>
 			</div>
 		</div>
 		<div id="tab-input">
