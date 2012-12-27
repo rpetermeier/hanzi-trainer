@@ -20,20 +20,22 @@ function initializeHanzi() {
 	return data;
 }
 
-function HanziViewModel() {
-    this.number = ko.observable(6);
+var HanziViewModel = function() {
+    this.number = ko.observable(5);
 	this.showSolution = ko.observable(false);
-	this.initialData = [];
+	this.data = ko.observableArray(initializeHanzi());
 	this.generateData = ko.computed(function() {
-		return this.initialData;
+		return initializeHanzi();
 	});
 };
 
 function init() {
 	$("#tabs").tabs();
-	ko.applyBindings(new HanziViewModel());
+	var vm = new HanziViewModel();
+	ko.applyBindings(vm);
 	// initFlexigrid();
 }
+
 /*
 function initFlexigrid() {
 	$("#flex1").flexigrid({
