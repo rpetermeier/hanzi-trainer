@@ -69,7 +69,7 @@ function initializeHanzi() {
 
 var HanziViewModel = function() {
     this.numberOfHanziToGenerate = ko.observable(13);
-	this.showSolution = false;
+	this.showSolution = ko.observable(false);
 
 	this.currentData = ko.observableArray(initializeHanzi());
 	this.currentSelection = ko.observableArray([]);
@@ -138,12 +138,22 @@ var HanziViewModel = function() {
             { headerText: "Pinyin", rowText: "pinyin" },
             { headerText: "Deutsch", rowText: "german" },
             { headerText: "Hanzi", rowText: function (hanzi) {
-					return hanzi.hanziIfVisible(vm.showSolution);
+					return hanzi.hanziIfVisible(vm.showSolution._latestValue);
 				}
 			}
         ],
-        pageSize: 10
+        pageSize: 15
     });
+	
+	this.refreshGrid = function() {
+		var temp = this.currentSelection._latestValue.slice();
+		if (temp.length > 0) {
+			this.currentSelection.removeAll();
+			for (var ii = 0; ii < temp.length; ++ii) {
+				this.currentSelection.push(temp[ii]);
+			}
+		}
+	};
 };
 
 function importJsonData() {
@@ -186,5 +196,9 @@ function init() {
 	});
 	$("#button-load-from-server").click(loadJsonDataFromServer);
 	vm = new HanziViewModel();
+		
 	ko.applyBindings(vm);
+	vm.showSolution.subscribe(function(newValue) {
+		vm.refreshGrid();
+	});
 }
