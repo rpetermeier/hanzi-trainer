@@ -1,8 +1,13 @@
 ﻿var vm;
 
-function Hanzi(pinyin, hanzi, timestamp) {
+function Hanzi(pinyin, hanzi, german, timestamp) {
 	this.pinyin = pinyin;
 	this.hanzi = hanzi;
+	if (german != null) {
+		this.german = german;
+	} else {
+		this.german = "";
+	}
 	if (timestamp == null) {
 		this.timestamp = new Date();
 	} else {
@@ -12,9 +17,9 @@ function Hanzi(pinyin, hanzi, timestamp) {
 
 Hanzi.prototype.representation = function(showHanzi) {
 	if (showHanzi) {
-		return this.pinyin + ": " + this.hanzi;
+		return this.pinyin + " (" + this.german + ")" + ": " + this.hanzi;
 	} else {
-		return this.pinyin;
+		return this.pinyin + " (" + this.german + ")";
 	}
 }
 
@@ -22,7 +27,7 @@ function convertToHanzi(dataFromJson) {
 	var data = [];
 	if (dataFromJson != null) {
 		for (var ii = 0; ii < dataFromJson.length; ++ii) {
-			data[ii] = new Hanzi(dataFromJson[ii].pinyin, dataFromJson[ii].hanzi, dataFromJson[ii].timestamp);
+			data[ii] = new Hanzi(dataFromJson[ii].pinyin, dataFromJson[ii].hanzi, dataFromJson[ii].german, dataFromJson[ii].timestamp);
 		}
 	}
 	return data;
