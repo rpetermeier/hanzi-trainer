@@ -63,9 +63,13 @@ var HanziViewModel = function() {
 		this.currentSelection.removeAll();
 		var data = this.currentData._latestValue;
 		if (data.length > 0) {
-			for (var ii = 0; ii < Math.min(data.length, this.numberOfHanzi._latestValue); ++ii) {
+			var usedIndexes = [];
+			while (usedIndexes.length < Math.min(data.length, this.numberOfHanzi._latestValue)) {
 				var index = Math.floor(Math.random() * data.length);
-				this.currentSelection.push(data[index]);
+				if ($.inArray(index, usedIndexes) == -1) {
+					this.currentSelection.push(data[index]);
+					usedIndexes[usedIndexes.length] = index;
+				}
 			}
 		}
 	};
