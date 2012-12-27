@@ -140,7 +140,7 @@
     {
         "pinyin": "dà",
         "hanzi": "大",
-        "german": "groß (Fläche,allgemein)",
+        "german": "groß (Fläche, allgemein)",
         "timestamp": "2012-12-27T16:03:23.062Z"
     },
     {
@@ -248,7 +248,7 @@
     {
         "pinyin": "yè",
         "hanzi": "叶",
-        "german": "Blätter",
+        "german": "Blatt (Pflanze)",
         "timestamp": "2012-12-27T16:03:23.062Z"
     },
     {
@@ -404,13 +404,13 @@
     {
         "pinyin": "dōng",
         "hanzi": "东",
-        "german": "Westen",
+        "german": "Osten",
         "timestamp": "2012-12-27T16:03:23.062Z"
     },
     {
         "pinyin": "xī",
         "hanzi": "西",
-        "german": "Osten",
+        "german": "Westen",
         "timestamp": "2012-12-27T16:03:23.062Z"
     },
     {
@@ -628,5 +628,20 @@
         "hanzi": "冷",
         "german": "kalt",
         "timestamp": "2012-12-27T16:03:23.062Z"
-    }
+    },
+	{
+		"pinyin": "sòng",
+		"hanzi": "送",
+		"german": "schenken"
+	},
+	{
+		"pinyin": "de",
+		"hanzi": "的",
+		"german": "Partikel (Attribute)"
+	},
+	{
+		"pinyin": "bēi",
+		"hanzi": "杯",
+		"german": "Tasse, Becher"
+	}
 ]
