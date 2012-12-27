@@ -50,23 +50,25 @@ var HanziViewModel = function() {
 	this.showSolution = ko.observable(false);
 
 	this.currentData = ko.observableArray(initializeHanzi());
-	this.generatedData = ko.computed(function() {
-		// It is important to call the function currentData() here instead of accessing the property data
-		return this.currentData();
+	this.currentSelection = ko.observableArray([]);
+	
+	// This function is currently not needed
+	this.generatedSelection = ko.computed(function() {
+		// It is important to call the function currentSelection() here instead of accessing the property currentSelection
+		return this.currentSelection();
 	}, this);
 	
-	this.generateNewData = function() {
-		// this.currentData().removeAll();
-		// It is important to access the property this.currentData here, not the function this.currentData()
-		this.currentData.push(new Hanzi("tiān", "天"));
+	this.generateNewSelection = function() {
+		// It is important to access the property this.currentSelection here, not the function this.currentSelection()
+		this.currentSelection.push(new Hanzi("tiān", "天"));
 	};
 	
 	this.removeHanziElement = function(elem) {
-		alert(elem);
+		// alert(elem);
 	};
 	
 	this.addNewHanziElement = function(elem) {
-		alert(elem);
+		// alert(elem);
 	};
 	
 	this.addHanzi = function(hanzi) {
