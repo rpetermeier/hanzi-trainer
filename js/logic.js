@@ -35,7 +35,14 @@ var HanziViewModel = function() {
 	this.generateNewData = function() {
 		// this.currentData().removeAll();
 		this.currentData().push(new Hanzi("tiān", "天"));
-		alert("generateNewData");
+	};
+	
+	this.removeHanziElement = function(elem) {
+		alert(elem);
+	};
+	
+	this.addNewHanziElement = function(elem) {
+		alert(elem);
 	};
 };
 
