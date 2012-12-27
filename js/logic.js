@@ -121,7 +121,16 @@ var HanziViewModel = function() {
 		for (var ii = 0; ii < hanzi.length; ++ii) {
 			this.currentData.push(hanzi[ii]);
 		}
-	}
+	};
+	
+	this.rebuildFromJson = function(dataFromJson) {
+		this.currentData.removeAll();
+		var dataAsHanzi = convertToHanzi(dataFromJson);
+		for (var ii = 0; ii < dataAsHanzi.length; ++ii) {
+			this.currentData.push(dataAsHanzi[ii]);
+		}
+		$.jStorage.set("list-of-hanzi", dataAsHanzi);
+	};
 	
 	this.gridViewModel = new ko.simpleGrid.viewModel({
         data: this.currentSelection,
@@ -152,6 +161,13 @@ function importJsonData() {
 	}
 }
 
+function loadJsonDataFromServer() {
+	$.getJSON('json/hanzi.json', function(jsonData) {
+		vm.rebuildFromJson(jsonData);
+		alert("Das Laden der Hanzi aus der Datei auf dem Server war erfolgreich.\nDas Vokabular umfasst jetzt " + vm.totalNumberOfHanzi() + " Hanzi.");
+	});
+}
+
 function init() {
 	$("#tabs").tabs();
 	$("button").button();
@@ -168,6 +184,7 @@ function init() {
 		var ta = $("#ta-import-export");
 		ta.val("");
 	});
+	$("#button-load-from-server").click(loadJsonDataFromServer);
 	vm = new HanziViewModel();
 	ko.applyBindings(vm);
 }
