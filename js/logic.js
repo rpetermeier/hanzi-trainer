@@ -60,7 +60,7 @@ function initializeHanzi() {
 }
 
 var HanziViewModel = function() {
-    this.numberOfHanzi = ko.observable(5);
+    this.numberOfHanziToGenerate = ko.observable(5);
 	this.showSolution = false;
 
 	this.currentData = ko.observableArray(initializeHanzi());
@@ -71,6 +71,12 @@ var HanziViewModel = function() {
 		// It is important to call the function currentSelection() here instead of accessing the property currentSelection
 		return this.currentSelection();
 		}, this);
+
+	this.totalNumberOfHanzi = ko.computed(function() {
+			// It is important to call the function currentData() here instead of accessing the property currentData
+			var number = this.currentData().length;
+			return number;
+		}, this);
 	
 	this.generateNewSelection = function() {
 		// It is important to access the property this.currentSelection here, not the function this.currentSelection()
@@ -78,7 +84,7 @@ var HanziViewModel = function() {
 		var data = this.currentData._latestValue;
 		if (data.length > 0) {
 			var usedIndexes = [];
-			while (usedIndexes.length < Math.min(data.length, this.numberOfHanzi._latestValue)) {
+			while (usedIndexes.length < Math.min(data.length, this.numberOfHanziToGenerate._latestValue)) {
 				var index = Math.floor(Math.random() * data.length);
 				if ($.inArray(index, usedIndexes) == -1) {
 					this.currentSelection.push(data[index]);
@@ -124,7 +130,7 @@ function init() {
 	$("button").button();
 	// Binding currently does not work correctly with a spinner;
 	// probably some custom code is needed for this to work
-	// $("#number-of-hanzi").spinner();
+	// $("#number-of-hanzi-to-generate").spinner();
 	$("#button-export").click(function() {
 		var exportText = JSON.stringify($.jStorage.get("list-of-hanzi"));
 		var ta = $("#ta-import-export");

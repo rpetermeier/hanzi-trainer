@@ -6,6 +6,11 @@
   width: 120px;
 }
 
-#number-of-hanzi {
+#number-of-hanzi-to-generate {
 	width: 35px;
+}
+
+#total-number-of-hanzi {
+	color: maroon;
+	font-weight: bold;
 }
