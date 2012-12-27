@@ -68,7 +68,7 @@ function initializeHanzi() {
 }
 
 var HanziViewModel = function() {
-    this.numberOfHanziToGenerate = ko.observable(5);
+    this.numberOfHanziToGenerate = ko.observable(13);
 	this.showSolution = false;
 
 	this.currentData = ko.observableArray(initializeHanzi());
