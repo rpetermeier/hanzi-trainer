@@ -164,6 +164,10 @@ function init() {
 		ta.val(exportText);
 	});
 	$("#button-import").click(importJsonData);
+	$("#button-clear-import-export").click(function() {
+		var ta = $("#ta-import-export");
+		ta.val("");
+	});
 	vm = new HanziViewModel();
 	ko.applyBindings(vm);
 }
