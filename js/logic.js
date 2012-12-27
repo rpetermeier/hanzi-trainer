@@ -1,12 +1,16 @@
-var hanziViewModel = {
-    number: 5,
-	showHanzi: false
+function HanziViewModel() {
+    this.number = ko.observable(5);
+	this.showSolution = ko.observable(false);
+	this.initialData = [];
+	this.generateData = ko.computed(function() {
+		return this.initialData;
+	});
 };
 
 function init() {
-	$( "#tabs" ).tabs();
-	ko.applyBindings(hanziViewModel);
-	initFlexigrid();
+	$("#tabs").tabs();
+	ko.applyBindings(new HanziViewModel());
+	// initFlexigrid();
 }
 
 function initFlexigrid() {

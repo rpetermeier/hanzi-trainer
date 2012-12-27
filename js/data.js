@@ -8,10 +8,15 @@ Hanzi.prototype.toString = function() {
 	return this.pinyin + ": " + this.hanzi;
 }
 
-var initialData = initializeHanzi();
+var initialData = [];
+var generatedData = initializeHanzi();
+
+function emptyData() {
+	return [];
+}
 
 function initializeHanzi() {
-	var initialData = new Hanzi[] {
+	var initialData = {
 		new Hanzi("nǐ", "你"),
 		new Hanzi("hǎo", "好"),
 		new Hanzi("ma", "吗"),
