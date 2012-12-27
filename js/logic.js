@@ -86,7 +86,9 @@ var HanziViewModel = function() {
 function init() {
 	$("#tabs").tabs();
 	$("button").button();
-	$("#number-of-hanzi").spinner();
+	// Binding currently does not work correctly with a spinner;
+	// probably some custom code is needed for this to work
+	// $("#number-of-hanzi").spinner();
 	vm = new HanziViewModel();
 	ko.applyBindings(vm);
 }
