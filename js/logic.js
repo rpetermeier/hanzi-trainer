@@ -56,15 +56,21 @@ var HanziViewModel = function() {
 	this.generatedSelection = ko.computed(function() {
 		// It is important to call the function currentSelection() here instead of accessing the property currentSelection
 		return this.currentSelection();
-	}, this);
+		}, this);
 	
 	this.generateNewSelection = function() {
 		// It is important to access the property this.currentSelection here, not the function this.currentSelection()
-		this.currentSelection.push(new Hanzi("tiān", "天"));
+		this.currentSelection.removeAll();
+		var data = this.currentData._latestValue;
+		if (data.length > 0) {
+			var index = Math.floor(Math.random() * data.length);
+			this.currentSelection.push(data[index]);
+		}
 	};
 	
 	this.removeHanziElement = function(elem) {
 		// alert(elem);
+		$(elem).remove();
 	};
 	
 	this.addNewHanziElement = function(elem) {
