@@ -18,6 +18,16 @@ Hanzi.prototype.representation = function(showHanzi) {
 	}
 }
 
+function convertToHanzi(dataFromJson) {
+	var data = [];
+	if (dataFromJson != null) {
+		for (var ii = 0; ii < dataFromJson.length; ++ii) {
+			data[ii] = new Hanzi(dataFromJson[ii].pinyin, dataFromJson[ii].hanzi, dataFromJson[ii].timestamp);
+		}
+	}
+	return data;
+}
+
 function initializeHanzi() {
 	var data;
 	// alert(JSON.stringify(data));
@@ -39,13 +49,8 @@ function initializeHanzi() {
 	// var storedData = $.jStorage.get("list-of-hanzi");
 	// data = storedData;
 	// $.jStorage.set("list-of-hanzi", data);
-	var localdata = $.jStorage.get("list-of-hanzi");
-	data = [];
-	if (localdata != null) {
-		for (var ii = 0; ii < localdata.length; ++ii) {
-			data[ii] = new Hanzi(localdata[ii].pinyin, localdata[ii].hanzi, localdata[ii].timestamp);
-		}
-	}
+	var dataFromJson = $.jStorage.get("list-of-hanzi");
+	data = convertToHanzi(dataFromJson);
 	return data;
 }
 
@@ -56,7 +61,7 @@ var HanziViewModel = function() {
 	this.currentData = ko.observableArray(initializeHanzi());
 	this.currentSelection = ko.observableArray([]);
 	
-	// This function is currently not needed
+	// This function is currently not needed and not used
 	this.generatedSelection = ko.computed(function() {
 		// It is important to call the function currentSelection() here instead of accessing the property currentSelection
 		return this.currentSelection();
@@ -89,8 +94,25 @@ var HanziViewModel = function() {
 	this.addHanzi = function(hanzi) {
 		this.currentData.push(hanzi);
 		// $.jStorage.set("list-of-hanzi", this.currentData._latestValue);
+	};
+	
+	this.rebuildFromLocalStorage = function() {
+		this.currentData.removeAll();
+		var hanzi = initializeHanzi();
+		for (var ii = 0; ii < hanzi.length; ++ii) {
+			this.currentData.push(hanzi[ii]);
+		}
 	}
 };
+
+function importJsonData() {
+	var ta = $("#ta-import-export");
+	var json = ta.val();
+	var dataFromJson = JSON.parse(json);
+	var dataAsHanzi = convertToHanzi(dataFromJson);
+	$.jStorage.set("list-of-hanzi", dataAsHanzi);
+	vm.rebuildFromLocalStorage();
+}
 
 function init() {
 	$("#tabs").tabs();
@@ -103,11 +125,7 @@ function init() {
 		var ta = $("#ta-import-export");
 		ta.val(exportText);
 	});
-	$("#button-export").click(function() {
-		var exportText = JSON.stringify($.jStorage.get("list-of-hanzi"));
-		var ta = $("#ta-import-export");
-		ta.val(exportText);
-	});
+	$("#button-import").click(importJsonData);
 	vm = new HanziViewModel();
 	ko.applyBindings(vm);
 }
