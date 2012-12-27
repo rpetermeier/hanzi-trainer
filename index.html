@@ -14,6 +14,7 @@
 		<script type="text/javascript" src="js/Flexigrid/Flexigrid-master/js/flexigrid.js"></script>
 		<script type="text/javascript" src="js/jstorage/jstorage.js"></script>
 		<script type="text/javascript" src="js/KnockoutJs/knockout-2.2.0.debug.js"></script>
+		<script type="text/javascript" src="js/KnockoutJs/knockout.simpleGrid.1.3.js"></script>
 
 		<script type="text/javascript" src="js/logic.js"></script>
 		<script type="text/javascript">
@@ -39,9 +40,12 @@
 				<label for="create">Hanzi</label>&nbsp;<button id="create" data-bind='click: generateNewSelection'>erzeugen</button>
 				<input type="checkbox" id="show-hanzi" data-bind="checked: showSolution" /><label for="show-hanzi">Hanzi anzeigen</label>
 			</p>
+			<!--
 			<div data-bind='template: { foreach: currentSelection, beforeRemove: removeHanziElement, afterAdd: addNewHanziElement }'>
 				<div data-bind='text: representation($root.showSolution)'> </div>
 			</div>
+			-->
+			<div data-bind='simpleGrid: gridViewModel'> </div>
 		</div>
 		<div id="tab-input">
 			<p>Eingabe</p>
