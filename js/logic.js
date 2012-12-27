@@ -37,10 +37,11 @@ function initializeHanzi() {
 	// $.jStorage.set("list-of-hanzi", data);
 	var localdata = $.jStorage.get("list-of-hanzi");
 	data = [];
-	for (var ii = 0; ii < localdata.length; ++ii) {
-		data[ii] = new Hanzi(localdata[ii].pinyin, localdata[ii].hanzi, localdata[ii].timestamp);
+	if (localdata != null) {
+		for (var ii = 0; ii < localdata.length; ++ii) {
+			data[ii] = new Hanzi(localdata[ii].pinyin, localdata[ii].hanzi, localdata[ii].timestamp);
+		}
 	}
-
 	return data;
 }
 
