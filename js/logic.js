@@ -1,4 +1,6 @@
-﻿function Hanzi(pinyin, hanzi) {
+﻿var vm;
+
+function Hanzi(pinyin, hanzi) {
 	this.pinyin = pinyin;
 	this.hanzi = hanzi;
 	this.timestamp = new Date();
@@ -23,15 +25,23 @@ function initializeHanzi() {
 var HanziViewModel = function() {
     this.number = ko.observable(5);
 	this.showSolution = ko.observable(false);
-	this.data = ko.observableArray(initializeHanzi());
-	this.generateData = ko.computed(function() {
-		return initializeHanzi();
-	});
+	this.currentData = ko.observableArray(initializeHanzi());
+	// this.currentData = ko.observableArray([]);
+	this.generatedData = ko.computed(function() {
+		// It is important to call the function data() here instead of accessing the property data
+		return this.currentData();
+	}, this);
+	
+	this.generateNewData = function() {
+		// this.currentData().removeAll();
+		this.currentData().push(new Hanzi("tiān", "天"));
+		alert("generateNewData");
+	};
 };
 
 function init() {
 	$("#tabs").tabs();
-	var vm = new HanziViewModel();
+	vm = new HanziViewModel();
 	ko.applyBindings(vm);
 	// initFlexigrid();
 }
