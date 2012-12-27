@@ -1,0 +1,48 @@
+/* Necessary for alignment of labels with input fields */
+.filter-area label, .filter-area input {
+  display: inline-block;
+}
+.filter-area label {
+  width: 120px;
+}
+
+#number-of-hanzi-to-generate {
+	width: 35px;
+}
+
+#total-number-of-hanzi {
+	color: maroon;
+	font-weight: bold;
+}
+
+.ko-grid {
+    background-color: White;
+    border: 1px solid silver;
+    margin-bottom: 1em;
+    width: 25em;
+}
+.ko-grid th {
+    background-color: Black;
+    color: White;
+    text-align: left;
+}
+.ko-grid td, th {
+    padding: 0.4em;
+}
+.ko-grid tr:nth-child(2n+1) {
+    background-color: #DDDDDD;
+}
+.ko-grid-pageLinks {
+    margin-bottom: 1em;
+}
+.ko-grid-pageLinks a {
+    padding: 0.5em;
+}
+.ko-grid-pageLinks a.selected {
+    background-color: Black;
+    color: White;
+}
+.liveExample {
+    height: 20em;
+    overflow: auto;
+}
