@@ -1,5 +1,27 @@
+﻿function Hanzi(pinyin, hanzi) {
+	this.pinyin = pinyin;
+	this.hanzi = hanzi;
+	this.timestamp = new Date();
+}
+
+Hanzi.prototype.representation = function() {
+	return this.pinyin + ": " + this.hanzi;
+}
+
+function initializeHanzi() {
+	var data = [
+		new Hanzi("nǐ", "你"),
+		new Hanzi("hǎo", "好"),
+		new Hanzi("ma", "吗"),
+		new Hanzi("tiān", "天"),
+		new Hanzi("qì", "气")
+	];
+	
+	return data;
+}
+
 function HanziViewModel() {
-    this.number = ko.observable(5);
+    this.number = ko.observable(6);
 	this.showSolution = ko.observable(false);
 	this.initialData = [];
 	this.generateData = ko.computed(function() {
@@ -12,7 +34,7 @@ function init() {
 	ko.applyBindings(new HanziViewModel());
 	// initFlexigrid();
 }
-
+/*
 function initFlexigrid() {
 	$("#flex1").flexigrid({
 		dataType: 'json',
@@ -40,3 +62,4 @@ function initFlexigrid() {
 		fg.flexAddData(jsonData);
 	});
 }
+*/

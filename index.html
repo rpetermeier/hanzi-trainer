@@ -14,8 +14,7 @@
 		<script type="text/javascript" src="js/Flexigrid/Flexigrid-master/js/flexigrid.js"></script>
 		<script type="text/javascript" src="js/jstorage/jstorage.js"></script>
 		<script type="text/javascript" src="js/KnockoutJs/knockout-2.2.0.debug.js"></script>
-		
-		<script type="text/javascript" src="js/data.js"></script>
+
 		<script type="text/javascript" src="js/logic.js"></script>
 		<script type="text/javascript">
 			$(document).ready(function() {
@@ -36,11 +35,9 @@
 			<label for="create">Hanzi</label>&nbsp;<button id="create">erzeugen</button>
 			<input type="checkbox" id="show-hanzi" data-bind="checked: showSolution" /><label for="show-hanzi">Hanzi anzeigen</label>
 			</p>
-			<!--<div data-bind='template: { foreach: planetsToShow,
-										beforeRemove: hidePlanetElement,
-										afterAdd: showPlanetElement }'>
-				<div data-bind='attr: { "class": "planet " + type }, text: name'> </div>
-			</div>-->
+			<div data-bind='template: { foreach: generateData }'>
+				<div data-bind='text: representation'> </div>
+			</div>
 		</div>
 		<div id="tab-input">
 			<p>Eingabe</p>
