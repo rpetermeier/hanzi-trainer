@@ -98,6 +98,16 @@ function init() {
 	// Binding currently does not work correctly with a spinner;
 	// probably some custom code is needed for this to work
 	// $("#number-of-hanzi").spinner();
+	$("#button-export").click(function() {
+		var exportText = JSON.stringify($.jStorage.get("list-of-hanzi"));
+		var ta = $("#ta-import-export");
+		ta.val(exportText);
+	});
+	$("#button-export").click(function() {
+		var exportText = JSON.stringify($.jStorage.get("list-of-hanzi"));
+		var ta = $("#ta-import-export");
+		ta.val(exportText);
+	});
 	vm = new HanziViewModel();
 	ko.applyBindings(vm);
 }
