@@ -138,12 +138,18 @@ var HanziViewModel = function() {
 };
 
 function importJsonData() {
-	var ta = $("#ta-import-export");
-	var json = ta.val();
-	var dataFromJson = JSON.parse(json);
-	var dataAsHanzi = convertToHanzi(dataFromJson);
-	$.jStorage.set("list-of-hanzi", dataAsHanzi);
-	vm.rebuildFromLocalStorage();
+	try {
+		var ta = $("#ta-import-export");
+		var json = ta.val();
+		var dataFromJson = JSON.parse(json);
+		var dataAsHanzi = convertToHanzi(dataFromJson);
+		$.jStorage.set("list-of-hanzi", dataAsHanzi);
+		vm.rebuildFromLocalStorage();
+		alert("Der Import war erfolgreich. Das Vokabular umfasst jetzt " + vm.totalNumberOfHanzi() + " Hanzi.");
+		ta.val("");
+	} catch (exc) {
+		alert("Etwas ist schiefgegangen: " + exc);
+	}
 }
 
 function init() {
