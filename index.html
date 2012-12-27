@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Hanzi-Trainer</title>
+		<link type="text/css" href="js/jquery-ui-1.9.1.custom/css/ui-lightness/jquery-ui-1.9.1.custom.css" rel="stylesheet" />
+		<link type="text/css" href="js/Flexigrid/Flexigrid-master/css/flexigrid.css" rel="stylesheet" />
+		<link type="text/css" href="css/hanzi-trainer.css" rel="stylesheet" />
+		
+		<script type="text/javascript" src="js/json2.js/json2.js"></script>
+		<script type="text/javascript" src="js/jquery/jquery-1.8.3.js"></script>
+		<script type="text/javascript" src="js/jquery-ui-1.9.1.custom/js/jquery-ui-1.9.1.custom.js"></script>
+		<script type="text/javascript" src="js/jquery-json/jquery.json-2.3.js"></script>
+		<script type="text/javascript" src="js/Flexigrid/Flexigrid-master/js/flexigrid.js"></script>
+		<script type="text/javascript" src="js/jstorage/jstorage.js"></script>
+		<script type="text/javascript" src="js/KnockoutJs/knockout-2.2.0.debug.js"></script>
+		
+		<script type="text/javascript" src="js/data.js"></script>
+		<script type="text/javascript" src="js/logic.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				init();
+			});
+		</script>
+	</head>
+<body>
+	<h1>Hanzi-Trainer</h1>
+	<div id="tabs">
+		<ul>
+			<li><a href="#tab-training">Training</a></li>
+			<li><a href="#tab-input">Eingabe</a></li>
+		</ul>
+		<div id="tab-training">
+			<p>
+			<label for="number">Sequenz von </label><input type="text" id="number" data-bind="value: number"/>
+			<label for="create">Hanzi</label>&nbsp;<button id="create">erzeugen</button>
+			<input type="checkbox" id="show-hanzi" data-bind="value: showHanzi" /><label for="show-hanzi">Hanzi anzeigen</label>
+			</p>
+		</div>
+		<div id="tab-input">
+			<p>Eingabe</p>
+		</div>
+	</div>
+	<div id="dispo-zeitbereich-form" title="Hanzi bearbeiten">
+		<form>
+		<fieldset class="dispo-zeitbereich">
+			<div id="dispo-zeitbereich-radiobuttons">
+				<input type="radio" id="dispo-zeitbereich-nur-heute" name="dispo-zeitbereich-radio" checked="checked" /><label for="dispo-zeitbereich-nur-heute">Nur heute</label>
+				<input type="radio" id="dispo-zeitbereich-zeitraum" name="dispo-zeitbereich-radio" /><label for="dispo-zeitbereich-zeitraum">Zeitraum</label>
+			</div>
+			<p><label for="dispo-zeitbereich-datum-von">Von: </label></p>
+			<p><input type="text" id="dispo-zeitbereich-datum-von" /></p>
+			<p><label for="dispo-zeitbereich-datum-von">Bis: </label></p>
+			<p><input type="text" id="dispo-zeitbereich-datum-bis" /></p>
+			<p><input type="checkbox" id="dispo-zeitbereich-mo-fr" /><label for="dispo-zeitbereich-mo-fr">Werktags</label></p>
+			<p><input type="checkbox" id="dispo-zeitbereich-so" /><label for="dispo-zeitbereich-sa">Samstag</label></p>
+			<p><input type="checkbox" id="dispo-zeitbereich-sa" /><label for="dispo-zeitbereich-so">Sonntag</label></p>
+		</fieldset>
+		</form>
+	</div>
+</body>
+</html>
