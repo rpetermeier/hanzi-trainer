@@ -1,6 +1,6 @@
 var hanziViewModel = {
     number: 5,
-	showHanzi: true
+	showHanzi: false
 };
 
 function init() {
