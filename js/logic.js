@@ -68,8 +68,9 @@ function initializeHanzi() {
 }
 
 var HanziViewModel = function() {
-    this.numberOfHanziToGenerate = ko.observable(13);
-	this.showSolution = ko.observable(false);
+    this.numberOfHanziToGenerate = ko.observable($.jStorage.get("number-of-hanzi-to-generate", 13));
+	this.showSolution = ko.observable($.jStorage.get("show-solution", false));
+	// this.showSolution = ko.observable(false);
 
 	this.currentData = ko.observableArray(initializeHanzi());
 	this.currentSelection = ko.observableArray([]);
@@ -209,6 +210,10 @@ function init() {
 		
 	ko.applyBindings(vm);
 	vm.showSolution.subscribe(function(newValue) {
+		$.jStorage.set("show-solution", newValue);
 		vm.refreshGrid();
+	});
+	vm.numberOfHanziToGenerate.subscribe(function(newValue) {
+		$.jStorage.set("number-of-hanzi-to-generate", newValue);
 	});
 }
