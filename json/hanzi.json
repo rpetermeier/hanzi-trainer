@@ -572,13 +572,13 @@
     {
         "pinyin": "kǒu",
         "hanzi": "口",
-        "german": "Mund, ZEW für Familienmitglieder",
+        "german": "Mund; ZEW für Familienmitglieder",
         "timestamp": "2012-12-27T16:03:23.062Z"
     },
     {
         "pinyin": "ge",
         "hanzi": "个",
-        "german": "ZEW für Personen, allgemeines",
+        "german": "ZEW für Personen und Allgemeines",
         "timestamp": "2012-12-27T16:03:23.062Z"
     },
     {
@@ -590,7 +590,7 @@
     {
         "pinyin": "dào",
         "hanzi": "道",
-        "german": "der Weg",
+        "german": "Weg",
         "timestamp": "2012-12-27T16:03:23.062Z"
     },
     {
@@ -646,5 +646,17 @@
         "hanzi": "杯",
         "german": "Tasse, Becher",
         "timestamp": "2012-12-27T20:51:51.294Z"
+    },
+    {
+        "pinyin": "hé",
+        "hanzi": "和",
+        "german": "und; harmonisch",
+        "timestamp": "2012-12-28T07:06:52.200Z"
+    },
+    {
+        "pinyin": "yóu",
+        "hanzi": "由",
+        "german": "wegen; Grund, Ursache",
+        "timestamp": "2012-12-28T07:06:52.200Z"
     }
 ]
