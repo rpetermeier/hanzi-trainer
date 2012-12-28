@@ -15,6 +15,11 @@
 	font-weight: bold;
 }
 
+#intro-short {
+	font-weight: bold;
+	width: 450px;
+}
+
 .ko-grid {
     background-color: White;
     border: 1px solid silver;
