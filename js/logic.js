@@ -42,28 +42,8 @@ function convertToHanzi(dataFromJson) {
 }
 
 function initializeHanzi() {
-	var data;
-	// alert(JSON.stringify(data));
-	// Retrieve static data
-	/*data = [
-		new Hanzi("nǐ", "你"),
-		new Hanzi("hǎo", "好"),
-		new Hanzi("ma", "吗"),
-		new Hanzi("tiān", "天"),
-		new Hanzi("qì", "气")
-	];*/
-	
-	// Retrieve from JSON file
-	// $.getJSON('json/hanzi.json', function(jsonData) {
-	//	
-	// });
-	
-	// Retrieve from local storage
-	// var storedData = $.jStorage.get("list-of-hanzi");
-	// data = storedData;
-	// $.jStorage.set("list-of-hanzi", data);
 	var dataFromJson = $.jStorage.get("list-of-hanzi");
-	data = convertToHanzi(dataFromJson);
+	var data = convertToHanzi(dataFromJson);
 	return data;
 }
 
@@ -109,11 +89,6 @@ var HanziViewModel = function() {
 	
 	this.addNewHanziElement = function(elem) {
 		// alert(elem);
-	};
-	
-	this.addHanzi = function(hanzi) {
-		this.currentData.push(hanzi);
-		// $.jStorage.set("list-of-hanzi", this.currentData._latestValue);
 	};
 	
 	this.rebuildFromLocalStorage = function() {
@@ -165,29 +140,66 @@ var HanziViewModel = function() {
 			return "";
 		}
 	}, this);
+	
+	this.importJsonData = function() {
+		try {
+			var ta = $("#ta-import-export");
+			var json = ta.val();
+			var dataFromJson = JSON.parse(json);
+			var dataAsHanzi = convertToHanzi(dataFromJson);
+			$.jStorage.set("list-of-hanzi", dataAsHanzi);
+			vm.rebuildFromLocalStorage();
+			alert("Der Import war erfolgreich. Das Vokabular umfasst jetzt " + this.totalNumberOfHanzi() + " Hanzi.");
+			ta.val("");
+		} catch (exc) {
+			alert("Etwas ist schiefgegangen: " + exc);
+		}
+	};
+	
+	this.loadJsonDataFromServer = function() {
+		$.getJSON('json/hanzi/2012-12-28.json', function(jsonData) {
+			vm.rebuildFromJson(jsonData);
+			alert("Das Laden der Hanzi aus der Datei auf dem Server war erfolgreich.\nDas Vokabular umfasst jetzt " + vm.totalNumberOfHanzi() + " Hanzi.");
+		});
+	};
+
+	this.exportToExcel = function() {
+		var data = this.currentData._latestValue;
+		var output = "";
+		for (var ii = 0; ii < data.length; ++ii) {
+			output += (data[ii].pinyin + "\t" + data[ii].german + "\t" + data[ii].hanzi);
+			if (ii < data.length - 1) output += "\n";
+		}
+		$("#ta-import-export-excel").val(output);
+	};
+
+	this.importFromExcel = function() {
+		try {
+			var ta = $("#ta-import-export-excel");
+			var tabSeparatedData = ta.val();
+			var rows = tabSeparatedData.split(/\r\n|\n/);
+			var hanzi = new Array();
+			var counter = 0;
+			for (var ii = 0; ii < rows.length; ++ii) {
+				var row = rows[ii].split('\t');
+				if (row.length == 3) {
+					hanzi.push(new Hanzi(row[0], row[2], row[1]));
+				}
+			}
+			this.currentData.removeAll();
+			for (var ii = 0; ii < hanzi.length; ++ii) {
+				if (hanzi[ii] != null) {
+					this.currentData.push(hanzi[ii]);
+				}
+			}
+			$.jStorage.set("list-of-hanzi", hanzi);
+			alert("Der Import war erfolgreich. Das Vokabular umfasst jetzt " + this.totalNumberOfHanzi() + " Hanzi.");
+			ta.val("");
+		} catch (exc) {
+			alert("Etwas ist schiefgegangen: " + exc);
+		}
+	};
 };
-
-function importJsonData() {
-	try {
-		var ta = $("#ta-import-export");
-		var json = ta.val();
-		var dataFromJson = JSON.parse(json);
-		var dataAsHanzi = convertToHanzi(dataFromJson);
-		$.jStorage.set("list-of-hanzi", dataAsHanzi);
-		vm.rebuildFromLocalStorage();
-		alert("Der Import war erfolgreich. Das Vokabular umfasst jetzt " + vm.totalNumberOfHanzi() + " Hanzi.");
-		ta.val("");
-	} catch (exc) {
-		alert("Etwas ist schiefgegangen: " + exc);
-	}
-}
-
-function loadJsonDataFromServer() {
-	$.getJSON('json/hanzi/2012-12-28.json', function(jsonData) {
-		vm.rebuildFromJson(jsonData);
-		alert("Das Laden der Hanzi aus der Datei auf dem Server war erfolgreich.\nDas Vokabular umfasst jetzt " + vm.totalNumberOfHanzi() + " Hanzi.");
-	});
-}
 
 function init() {
 	$("#tabs").tabs();
@@ -200,12 +212,22 @@ function init() {
 		var ta = $("#ta-import-export");
 		ta.val(exportText);
 	});
-	$("#button-import").click(importJsonData);
+	$("#button-import").click(function() { vm.importJsonData(); });
 	$("#button-clear-import-export").click(function() {
 		var ta = $("#ta-import-export");
 		ta.val("");
 	});
-	$("#button-load-from-server").click(loadJsonDataFromServer);
+	$("#button-load-from-server").click(function() { vm.loadJsonDataFromServer(); } );
+	$("#button-export-excel").click(function() {
+		vm.exportToExcel();
+	});
+	$("#button-import-excel").click(function() {
+		vm.importFromExcel();
+	});
+	$("#button-clear-import-export-excel").click(function() {
+		var ta = $("#ta-import-export-excel");
+		ta.val("");
+	});
 	vm = new HanziViewModel();
 		
 	ko.applyBindings(vm);

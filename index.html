@@ -2,6 +2,9 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="cache-control" content="no-cache">
+		<meta http-equiv="pragma" content="no-cache">
+
 		<title>Hanzi-Trainer</title>
 		<link type="text/css" href="js/jquery-ui-1.9.1.custom/css/ui-lightness/jquery-ui-1.9.1.custom.css" rel="stylesheet" />
 		<link type="text/css" href="js/Flexigrid/Flexigrid-master/css/flexigrid.css" rel="stylesheet" />
@@ -28,8 +31,8 @@
 	<div id="tabs">
 		<ul>
 			<li><a href="#tab-training">Training</a></li>
-			<li><a href="#tab-input">Eingabe</a></li>
 			<li><a href="#tab-import-export">Import/Export</a></li>
+			<li><a href="#tab-import-export-excel">Import/Export über Excel</a></li>
 			<li><a href="#tab-hilfe">Hilfe</a></li>
 		</ul>
 		<div id="tab-training">
@@ -49,22 +52,32 @@
 			<div data-bind='simpleGrid: gridViewModel'> </div>
 			<div id="intro-short" data-bind="text: hint"></div>
 		</div>
-		<div id="tab-input">
-			<p>Eingabe</p>
-		</div>
 		<div id="tab-import-export">
 			<p>Import/Export</p>
 			<p>
-				<textarea name="ta-import-export" id="ta-import-export" cols="80" rows="20"></textarea>
+				<textarea name="ta-import-export" id="ta-import-export" cols="60" rows="15"></textarea>
 			</p>
 			<p>
+				<button id="button-load-from-server">Lade vom Server!</button>
+				&nbsp;
 				<button id="button-import">Importiere!</button>
 				&nbsp;
 				<button id="button-export">Exportiere!</button>
 				&nbsp;
-				<button id="button-load-from-server">Lade vom Server!</button>
-				&nbsp;
 				<button id="button-clear-import-export">Leere!</button>
+			</p>
+		</div>
+		<div id="tab-import-export-excel">
+			<p>Import/Export über Excel</p>
+			<p>
+				<textarea name="ta-import-export-excel" id="ta-import-export-excel" cols="60" rows="15"></textarea>
+			</p>
+			<p>
+				<button id="button-import-excel">Importiere!</button>
+				&nbsp;
+				<button id="button-export-excel">Exportiere!</button>
+				&nbsp;
+				<button id="button-clear-import-export-excel">Leere!</button>
 			</p>
 		</div>
 		<div id="tab-hilfe">
