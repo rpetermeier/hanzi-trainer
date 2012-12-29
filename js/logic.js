@@ -175,7 +175,10 @@ var HanziViewModel = function() {
 	};
 
 	this.exportToExcel = function() {
-		var data = this.currentData._latestValue;
+		var data = this.currentData._latestValue.slice();
+		data.sort(function(a, b) {
+			return a.pinyin.localeCompare(b.pinyin);
+		});
 		var output = "";
 		for (var ii = 0; ii < data.length; ++ii) {
 			output += (data[ii].pinyin + "\t" + data[ii].german + "\t" + data[ii].hanzi);
