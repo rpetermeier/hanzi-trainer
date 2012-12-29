@@ -165,6 +165,15 @@ var HanziViewModel = function() {
 			return "";
 		}
 	}, this);
+	
+	this.exportToExcel = function() {
+		var data = this.currentData._latestValue;
+		var output = "";
+		for (var ii = 0; ii < data.length; ++ii) {
+			output += (data[ii].pinyin + "\t" + data[ii].german + "\t" + data[ii].hanzi + "\n");
+		}
+		$("#ta-import-export-excel").val(output);
+	};
 };
 
 function importJsonData() {
@@ -206,6 +215,13 @@ function init() {
 		ta.val("");
 	});
 	$("#button-load-from-server").click(loadJsonDataFromServer);
+	$("#button-export-excel").click(function() {
+		vm.exportToExcel();
+	});
+	$("#button-clear-import-export-excel").click(function() {
+		var ta = $("#ta-import-export-excel");
+		ta.val("");
+	});
 	vm = new HanziViewModel();
 		
 	ko.applyBindings(vm);
