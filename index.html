@@ -73,21 +73,44 @@
 				<textarea name="ta-import-export-excel" id="ta-import-export-excel" cols="60" rows="15"></textarea>
 			</p>
 			<p>
+				<button id="button-load-from-server-excel">Lade vom Server!</button>
+				&nbsp;
 				<button id="button-import-excel">Importiere!</button>
 				&nbsp;
 				<button id="button-export-excel">Exportiere!</button>
 				&nbsp;
 				<button id="button-clear-import-export-excel">Leere!</button>
 			</p>
+			<h3 class="header-intro-short">Kurzanleitung</h3>
+			<ul>
+				<li>Falls noch keine Hanzi vorhanden: "Lade vom Server!" aufrufen</li>
+				<li>"Exportiere!" aufrufen</li>
+				<li>In das Textfeld klicken, Strg-A, Strg-C (alternativ: Rechtsklick, "Alles markieren", "Kopieren")</li>
+				<li>In einer leeren Excel-Datei: Strg-V (alternativ: Rechtsklick in Zelle, "Einfügen")</li>
+				<li>Excel-Datei beliebig erweitern, Überschriften, Formatierungen, &hellip; Wichtig: die Daten müssen immer in den drei Spalten bleiben</li>
+				<li>Bereich in der Excel-Datei markieren (genau die drei Spalten, beliebig viele Zeilen)</li>
+				<li>Strg-C (alternativ: Rechtsklick, "Kopieren")</li>
+				<li>Im Hanzi-Trainer auf diesem Reiter in das Textfeld klicken</li>
+				<li>Strg-V (alternativ: Rechtsklick in Textfeld, "Einfügen")</li>
+				<li>"Importiere!" aufrufen</li>
+			</ul>
 		</div>
 		<div id="tab-hilfe">
 			<p>Mit dieser Anwendung lassen sich zufällige Folgen von Hanzi erzeugen, die man dann mit Stift und Papier üben kann. Ziel dabei ist es, die vom Programm vorgegebenen Hanzi korrekt zu schreiben. Dazu klickt man einfach auf dem Reiter 'Training' auf den Button 'erzeugen'.</p>
 			<p>Die Voreinstellung, wieviele Hanzi erzeugt werden, kann geändert werden. Der voreingestellte Wert ist 13, da eine Zeile auf dem Übungsblatt dreizehn Kästchen umfasst. Die Hanzi sind per Voreinstellung ausgeblendet, können jedoch über den Haken 'Hanzi anzeigen' eingeblendet werden.</p>
 			<p>Natürlich muss erst einmal ein Vorrat von Hanzi da sein, die einem dann angeboten werden. Hierzu gibt es verschiedene Möglichkeiten:
 				<ul>
-					<li>Man lädt eine Datei als Voreinstellung vom Server. Dazu benutzt man auf dem Reiter 'Import/Export' den Button 'Lade vom Server'. Die Anwendung wird dann mit einer Datei befüllt, die meinem Lernfortschritt entspricht. Momentan ist dies eine Teilmenge der bisher vorgekommenen Hanzi aus dem Kurs-Buch.</li>
-					<li>Man importiert eine Datei auf dem Reiter 'Import/Export'</li>
-					<li>Man gibt eigene Hanzi auf dem Reiter 'Eingabe' ein (diese Funktionalität ist noch nicht fertig). Dies kann auch zusätzlich zu den einmal vom Server geladenen Werten (s.o.) geschehen. Das heißt, Daten werden einmalig vom Server geladen, dann aber nur für einen persönlich weitergeschrieben.</li>
+					<li>Du lädst eine Datei als Voreinstellung vom Server. Dazu benutzt Du auf dem Reiter 'Import/Export' den Button 'Lade vom Server!'. Die Anwendung wird dann mit einer Datei befüllt, die meinem Lernfortschritt entspricht. Momentan ist dies eine Teilmenge der bisher vorgekommenen Hanzi aus dem Kurs-Buch.</li>
+					<li>
+						Du importierst Daten aus Excel. Hierzu müssen die Daten in drei Spalten in Excel erfasst sein:
+						<ol>
+							<li>Spalte: Pinyin</li>
+							<li>Spalte: Die deutsche Übersetzung</li>
+							<li>Spalte: Das Hanzi</li>
+						</ol>
+						Dann kann ein Bereich mit diesen drei Spalten und genau den gewünschten Zeilen in Excel markiert und in die Zwischenablage kopiert werden. In dem Textfeld werden diese eingefügt und dann "Importiere!" benutzt.
+					</li>
+					<li>Du importierst eine Datei auf dem Reiter 'Import/Export'. Das ist vermutlich für die wenigsten praktikabel.</li>
 				</ul>
 			</p>
 			<p>
@@ -95,24 +118,5 @@
 			</p>
 		</div>
 	</div>
-	<!--
-	<div id="dispo-zeitbereich-form" title="Hanzi bearbeiten">
-		<form>
-		<fieldset class="dispo-zeitbereich">
-			<div id="dispo-zeitbereich-radiobuttons">
-				<input type="radio" id="dispo-zeitbereich-nur-heute" name="dispo-zeitbereich-radio" checked="checked" /><label for="dispo-zeitbereich-nur-heute">Nur heute</label>
-				<input type="radio" id="dispo-zeitbereich-zeitraum" name="dispo-zeitbereich-radio" /><label for="dispo-zeitbereich-zeitraum">Zeitraum</label>
-			</div>
-			<p><label for="dispo-zeitbereich-datum-von">Von: </label></p>
-			<p><input type="text" id="dispo-zeitbereich-datum-von" /></p>
-			<p><label for="dispo-zeitbereich-datum-von">Bis: </label></p>
-			<p><input type="text" id="dispo-zeitbereich-datum-bis" /></p>
-			<p><input type="checkbox" id="dispo-zeitbereich-mo-fr" /><label for="dispo-zeitbereich-mo-fr">Werktags</label></p>
-			<p><input type="checkbox" id="dispo-zeitbereich-so" /><label for="dispo-zeitbereich-sa">Samstag</label></p>
-			<p><input type="checkbox" id="dispo-zeitbereich-sa" /><label for="dispo-zeitbereich-so">Sonntag</label></p>
-		</fieldset>
-		</form>
-	</div>
-	-->
 </body>
 </html>

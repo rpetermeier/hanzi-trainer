@@ -225,6 +225,7 @@ function init() {
 		ta.val("");
 	});
 	$("#button-load-from-server").click(function() { vm.loadJsonDataFromServer(); } );
+	$("#button-load-from-server-excel").click(function() { vm.loadJsonDataFromServer(); } );
 	$("#button-export-excel").click(function() {
 		vm.exportToExcel();
 	});

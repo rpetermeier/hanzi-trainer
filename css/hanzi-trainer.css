@@ -20,6 +20,11 @@
 	width: 450px;
 }
 
+.header-intro-short {
+	font-size: 1em;
+	font-weight: bold;
+}
+
 .ko-grid {
     background-color: White;
     border: 1px solid silver;
