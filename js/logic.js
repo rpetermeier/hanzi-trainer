@@ -133,9 +133,9 @@ var HanziViewModel = function() {
 	
 	this.hint = ko.computed(function() {
 		if (this.currentData().length == 0) {
-			return "Zum Laden von Hanzi gehe auf den Reiter \"Import/Export über Excel\" und wähle dort entweder "
-				+ "\"Lade vom Server!\" oder kopiere den Inhalt einer eigenen Datei in das Textfeld "
-				+ "und wähle \"Importiere!\".";
+			return "Zum Laden von Hanzi gehe auf den Reiter Import/Export und wähle dort entweder "
+				+ "'Lade vom Server!' oder kopiere den Inhalt einer eigenen Datei in das Textfeld "
+				+ "und wähle 'Importiere!'.";
 		} else {
 			return "";
 		}
