@@ -156,6 +156,17 @@ var HanziViewModel = function() {
 		}
 	};
 	
+	this.exportJsonData = function() {
+		var hanzi = this.currentData._latestValue;
+		if (hanzi != null) {
+			var exportText = JSON.stringify(hanzi);
+			var ta = $("#ta-import-export");
+			ta.val(exportText);
+		} else {
+			ta.val("");
+		}
+	};
+	
 	this.loadJsonDataFromServer = function() {
 		$.getJSON('json/hanzi/2012-12-28.json', function(jsonData) {
 			vm.rebuildFromJson(jsonData);
@@ -207,11 +218,7 @@ function init() {
 	// Binding currently does not work correctly with a spinner;
 	// probably some custom code is needed for this to work
 	// $("#number-of-hanzi-to-generate").spinner();
-	$("#button-export").click(function() {
-		var exportText = JSON.stringify($.jStorage.get("list-of-hanzi"));
-		var ta = $("#ta-import-export");
-		ta.val(exportText);
-	});
+	$("#button-export").click(function() { vm.exportJsonData(); } );
 	$("#button-import").click(function() { vm.importJsonData(); });
 	$("#button-clear-import-export").click(function() {
 		var ta = $("#ta-import-export");
