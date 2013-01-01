@@ -712,5 +712,17 @@
         "hanzi": "宜",
         "german": "passend, angenehm",
         "timestamp": "2012-12-31T12:10:11.168Z"
+    },
+    {
+        "pinyin": "dī",
+        "hanzi": "低",
+        "german": "tief, niedrig; etwas senken",
+        "timestamp": "2013-01-01T15:47:16.420Z"
+    },
+    {
+        "pinyin": "dōu",
+        "hanzi": "都",
+        "german": "alle, ganz",
+        "timestamp": "2013-01-01T15:47:16.420Z"
     }
 ]
