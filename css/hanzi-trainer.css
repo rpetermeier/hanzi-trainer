@@ -6,6 +6,10 @@
   width: 120px;
 }
 
+h1 {
+	font-family: sans-serif;
+}
+
 #number-of-hanzi-to-generate {
 	width: 35px;
 }
