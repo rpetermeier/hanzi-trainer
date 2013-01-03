@@ -613,5 +613,15 @@
 		"hanzi" : "红",
 		"german" : "rot; revolutionär",
 		"timestamp" : "2013-01-02T15:29:08.126Z"
+	}, {
+		"pinyin" : "kè",
+		"hanzi" : "客",
+		"german" : "Gast; objektiv",
+		"timestamp" : "2013-01-03T18:23:46.628Z"
+	}, {
+		"pinyin" : "huò",
+		"hanzi" : "货",
+		"german" : "Ware",
+		"timestamp" : "2013-01-03T18:23:46.628Z"
 	}
 ]
