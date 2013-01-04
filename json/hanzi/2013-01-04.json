@@ -623,5 +623,15 @@
 		"hanzi" : "货",
 		"german" : "Ware",
 		"timestamp" : "2013-01-03T18:23:46.628Z"
+	}, {
+		"pinyin" : "kāi",
+		"hanzi" : "开",
+		"german" : "öffnen, einschalten, ...",
+		"timestamp" : "2013-01-04T18:02:49.664Z"
+	}, {
+		"pinyin" : "lái",
+		"hanzi" : "来",
+		"german" : "kommen",
+		"timestamp" : "2013-01-04T18:02:49.664Z"
 	}
 ]
