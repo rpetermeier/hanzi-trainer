@@ -633,5 +633,20 @@
 		"hanzi" : "来",
 		"german" : "kommen",
 		"timestamp" : "2013-01-04T18:02:49.664Z"
+	}, {
+		"pinyin" : "zhù",
+		"hanzi" : "祝",
+		"german" : "wünschen, beglückwünschen",
+		"timestamp" : "2013-01-05T16:11:48.620Z"
+	}, {
+		"pinyin" : "shēng",
+		"hanzi" : "生",
+		"german" : "gebären, leben; roh",
+		"timestamp" : "2013-01-05T16:11:48.620Z"
+	}, {
+		"pinyin" : "rì",
+		"hanzi" : "日",
+		"german" : "Sonne, Tag",
+		"timestamp" : "2013-01-05T16:11:48.620Z"
 	}
 ]
