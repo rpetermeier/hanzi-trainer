@@ -83,14 +83,6 @@ var HanziViewModel = function() {
 		}
 	};
 	
-	this.removeHanziElement = function(elem) {
-		$(elem).remove();
-	};
-	
-	this.addNewHanziElement = function(elem) {
-		// alert(elem);
-	};
-	
 	this.rebuildFromLocalStorage = function() {
 		this.currentData.removeAll();
 		var hanzi = initializeHanzi();
