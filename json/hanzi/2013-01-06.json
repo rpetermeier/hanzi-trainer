@@ -648,5 +648,20 @@
 		"hanzi" : "日",
 		"german" : "Sonne, Tag",
 		"timestamp" : "2013-01-05T16:11:48.620Z"
+	}, {
+		"pinyin" : "bái",
+		"hanzi" : "白",
+		"german" : "weiß, klar, vergeblich",
+		"timestamp" : "2013-01-06T11:26:54.586Z"
+	}, {
+		"pinyin" : "kuài",
+		"hanzi" : "快",
+		"german" : "vergnügt, schnell, bald; sich beeilen",
+		"timestamp" : "2013-01-06T11:26:54.586Z"
+	}, {
+		"pinyin" : "lè",
+		"hanzi" : "乐",
+		"german" : "froh; Spaß haben",
+		"timestamp" : "2013-01-06T11:26:54.586Z"
 	}
 ]
