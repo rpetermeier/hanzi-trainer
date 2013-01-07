@@ -663,5 +663,15 @@
 		"hanzi" : "乐",
 		"german" : "froh; Spaß haben",
 		"timestamp" : "2013-01-06T11:26:54.586Z"
+	}, {
+		"pinyin" : "jià",
+		"hanzi" : "价",
+		"german" : "Preis, Wert",
+		"timestamp" : "2013-01-07T20:09:37.771Z"
+	}, {
+		"pinyin" : "gé",
+		"hanzi" : "格",
+		"german" : "Norm, gitterförmig, Karomuster",
+		"timestamp" : "2013-01-07T20:09:37.771Z"
 	}
 ]
