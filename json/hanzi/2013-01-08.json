@@ -673,5 +673,15 @@
 		"hanzi" : "格",
 		"german" : "Norm, gitterförmig, Karomuster",
 		"timestamp" : "2013-01-07T20:09:37.771Z"
+	}, {
+		"pinyin" : "liǎng",
+		"hanzi" : "两",
+		"german" : "zwei (bei Mengenangaben)",
+		"timestamp" : "2013-01-08T19:10:13.510Z"
+	}, {
+		"pinyin" : "zhēn",
+		"hanzi" : "真",
+		"german" : "wirklich, echt",
+		"timestamp" : "2013-01-08T19:10:13.510Z"
 	}
 ]
