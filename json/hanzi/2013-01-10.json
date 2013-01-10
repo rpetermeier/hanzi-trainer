@@ -688,5 +688,20 @@
 		"hanzi" : "想",
 		"german" : "mögen, wollen, denken, vermissen",
 		"timestamp" : "2013-01-08T19:26:08.150Z"
+	}, {
+		"pinyin" : "chī",
+		"hanzi" : "吃",
+		"german" : "essen",
+		"timestamp" : "2013-01-10T20:39:43.284Z"
+	}, {
+		"pinyin" : "néng",
+		"hanzi" : "能",
+		"german" : "können, dürfen; Fähigkeit",
+		"timestamp" : "2013-01-10T19:37:29.417Z"
+	}, {
+		"pinyin" : "bàn",
+		"hanzi" : "半",
+		"german" : "halb; Hälfte",
+		"timestamp" : "2013-01-10T19:37:29.417Z"
 	}
 ]
