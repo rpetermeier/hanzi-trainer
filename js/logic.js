@@ -10,8 +10,10 @@ function Hanzi(pinyin, hanzi, german, timestamp) {
 	}
 	if (timestamp == null) {
 		this.timestamp = new Date();
+		this.timestampIsGenerated = true;
 	} else {
 		this.timestamp = timestamp;
+		this.timestampIsGenerated = false;
 	}
 }
 
@@ -66,6 +68,39 @@ var HanziViewModel = function() {
 			var number = this.currentData().length;
 			return number;
 		}, this);
+
+			
+	this.formatDate = function(date) {
+		if (date != null) {
+			return date.getDate() + "." + date.getMonth() + 1 + "." + date.getFullYear();
+		} else {
+			return "";
+		}
+	};
+		
+	this.dateOfNewestHanzi = function() {
+		var date = null;
+		for (var ii = 0; ii < this.currentData().length; ++ii) {
+			if (date != null && this.currentData()[ii].timestamp != null) {
+				var hanziDate = new Date(this.currentData()[ii].timestamp);
+				if (hanziDate.getTime() > date.getTime()) {
+					date = hanziDate;
+				}
+			} else if (this.currentData()[ii].timestamp != null) {
+				var hanziDate = new Date(this.currentData()[ii].timestamp);
+				date = hanziDate;
+			}
+		}
+		return date;
+	};
+	
+	this.dateOfNewestHanziFormatted = ko.computed(function() {
+		return this.formatDate(this.dateOfNewestHanzi());
+	}, this);
+	
+	this.hasHanzi = ko.computed(function() {
+		return this.currentData().length > 0;
+	}, this);
 	
 	this.generateNewSelection = function() {
 		// It is important to access the property this.currentData here, not the function this.currentData()

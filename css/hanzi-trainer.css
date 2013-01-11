@@ -14,7 +14,7 @@ h1 {
 	width: 35px;
 }
 
-#total-number-of-hanzi {
+#total-number-of-hanzi, #date-of-newest-hanzi {
 	color: maroon;
 	font-weight: bold;
 }
