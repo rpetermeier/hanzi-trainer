@@ -72,7 +72,9 @@ var HanziViewModel = function() {
 			
 	this.formatDate = function(date) {
 		if (date != null) {
-			return date.getDate() + "." + date.getMonth() + 1 + "." + date.getFullYear();
+			var month = date.getMonth() + 1;
+			month =  month < 10 ? ("0" + month) : ("" + month);
+			return date.getDate() + "." + month + "." + date.getFullYear();
 		} else {
 			return "";
 		}
@@ -81,12 +83,12 @@ var HanziViewModel = function() {
 	this.dateOfNewestHanzi = function() {
 		var date = null;
 		for (var ii = 0; ii < this.currentData().length; ++ii) {
-			if (date != null && this.currentData()[ii].timestamp != null) {
+			if (date != null && !this.currentData()[ii].timestampIsGenerated) {
 				var hanziDate = new Date(this.currentData()[ii].timestamp);
 				if (hanziDate.getTime() > date.getTime()) {
 					date = hanziDate;
 				}
-			} else if (this.currentData()[ii].timestamp != null) {
+			} else if (!this.currentData()[ii].timestampIsGenerated) {
 				var hanziDate = new Date(this.currentData()[ii].timestamp);
 				date = hanziDate;
 			}
@@ -95,12 +97,31 @@ var HanziViewModel = function() {
 	};
 	
 	this.dateOfNewestHanziFormatted = ko.computed(function() {
-		return this.formatDate(this.dateOfNewestHanzi());
+		var date = this.dateOfNewestHanzi();
+		return this.formatDate(date);
 	}, this);
 	
-	this.hasHanzi = ko.computed(function() {
-		return this.currentData().length > 0;
+	this.hasHanziWithRealTimestamp = ko.computed(function() {
+		var have = false;
+		for (var ii = 0; ii < this.currentData().length; ++ii) {
+			if (!this.currentData()[ii].timestampIsGenerated) {
+				have = true;
+				break;
+			}
+		}
+		return have;
 	}, this);
+	
+	this.showReloadHintIfNecessary = function() {
+		var dateOfNewestHanzi = this.dateOfNewestHanzi();
+		var now = new Date();
+		if (dateOfNewestHanzi != null && now.getTime() - dateOfNewestHanzi.getTime() > 1000 * 60 * 60 * 24 * 5) {
+			alert("Das neueste Hanzi ist vom " + this.formatDate(dateOfNewestHanzi) + 
+			".\n\nLade die Seite neu (F5) und verwende dann\n" +
+			"\"Lade vom Server!\" unter \"Import/Export\" um\n" +
+			"die neuesten Daten zu verwenden.");
+		}
+	};
 	
 	this.generateNewSelection = function() {
 		// It is important to access the property this.currentData here, not the function this.currentData()
@@ -276,4 +297,6 @@ function init() {
 	vm.numberOfHanziToGenerate.subscribe(function(newValue) {
 		$.jStorage.set("number-of-hanzi-to-generate", newValue);
 	});
+	
+	vm.showReloadHintIfNecessary();
 }
