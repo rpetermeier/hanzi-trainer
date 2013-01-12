@@ -38,17 +38,13 @@
 		<div id="tab-training">
 			<p>
 				<span>Du kennst momentan&nbsp;</span><span id="total-number-of-hanzi" data-bind="text: totalNumberOfHanzi"></span><span>&nbsp;Hanzi.</span>
+				<span data-bind="visible: dataFromServerIsUsed">Das neueste Hanzi ist vom <span id="date-of-newest-hanzi" data-bind="text: dateOfNewestHanziFormatted"></span><span>.</span></span>
 			</p>
 			<p>
 				<label for="number-of-hanzi-to-generate">Sequenz von </label><input type="text" id="number-of-hanzi-to-generate" data-bind="value: numberOfHanziToGenerate"/>
 				<label for="create">Hanzi</label>&nbsp;<button id="create" data-bind='click: generateNewSelection'>erzeugen</button>
 				<input type="checkbox" id="show-hanzi" data-bind="checked: showSolution" /><label for="show-hanzi">Hanzi anzeigen</label>
 			</p>
-			<!--
-			<div data-bind='template: { foreach: currentSelection, beforeRemove: removeHanziElement, afterAdd: addNewHanziElement }'>
-				<div data-bind='text: representation($root.showSolution)'> </div>
-			</div>
-			-->
 			<div data-bind='simpleGrid: gridViewModel'> </div>
 			<div id="intro-short" data-bind="text: hint"></div>
 		</div>

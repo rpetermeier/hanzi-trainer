@@ -30,42 +30,92 @@ Hanzi.prototype.hanziIfVisible = function(showHanzi) {
 		return "";
 	}
 }
-
-function convertToHanzi(dataFromJson) {
-	var data = [];
-	if (dataFromJson != null) {
-		for (var ii = 0; ii < dataFromJson.length; ++ii) {
-			data[ii] = new Hanzi(dataFromJson[ii].pinyin, dataFromJson[ii].hanzi, dataFromJson[ii].german, dataFromJson[ii].timestamp);
-		}
-	}
-	return data;
-}
-
-function initializeHanzi() {
-	var dataFromJson = $.jStorage.get("list-of-hanzi");
-	var data = convertToHanzi(dataFromJson);
-	return data;
-}
-
 var HanziViewModel = function() {
+	this.convertToHanzi = function(dataFromJson) {
+		var data = [];
+		if (dataFromJson != null) {
+			for (var ii = 0; ii < dataFromJson.length; ++ii) {
+				data[ii] = new Hanzi(dataFromJson[ii].pinyin, dataFromJson[ii].hanzi, dataFromJson[ii].german, dataFromJson[ii].timestamp);
+			}
+		}
+		return data;
+	};
+	
+	this.initializeHanzi = function() {
+		var dataFromJson = $.jStorage.get("list-of-hanzi");
+		var data = this.convertToHanzi(dataFromJson);
+		return data;
+	};
+
     this.numberOfHanziToGenerate = ko.observable($.jStorage.get("number-of-hanzi-to-generate", 13));
 	this.showSolution = ko.observable($.jStorage.get("show-solution", false));
-	// this.showSolution = ko.observable(false);
 
-	this.currentData = ko.observableArray(initializeHanzi());
+	this.currentData = ko.observableArray(this.initializeHanzi());
+	this.dataFromServerIsUsed = ko.observable($.jStorage.get("data-from-server-is-used", true));
 	this.currentSelection = ko.observableArray([]);
 	
 	// This function is currently not needed and not used
 	this.generatedSelection = ko.computed(function() {
 		// It is important to call the function currentSelection() here instead of accessing the property currentSelection
 		return this.currentSelection();
-		}, this);
+	}, this);
 
 	this.totalNumberOfHanzi = ko.computed(function() {
-			// It is important to call the function currentData() here instead of accessing the property currentData
-			var number = this.currentData().length;
-			return number;
-		}, this);
+		// It is important to call the function currentData() here instead of accessing the property currentData
+		var number = this.currentData().length;
+		return number;
+	}, this);
+
+	this.showDateOfNewestHanzi = ko.computed(function() {
+		return this.dataFromServerIsUsed && this.totalNumberOfHanzi() > 0;
+	}, this);
+	
+	this.setDataFromServerIsUsed = function(dataFromServerIsUsed) {
+		this.dataFromServerIsUsed(dataFromServerIsUsed);
+		$.jStorage.set("data-from-server-is-used", dataFromServerIsUsed);
+	};
+
+	this.formatDate = function(date) {
+		if (date != null) {
+			var month = date.getMonth() + 1;
+			month =  month < 10 ? ("0" + month) : ("" + month);
+			return date.getDate() + "." + month + "." + date.getFullYear();
+		} else {
+			return "";
+		}
+	};
+		
+	this.dateOfNewestHanzi = function() {
+		var date = null;
+		for (var ii = 0; ii < this.currentData().length; ++ii) {
+			if (date != null) {
+				var hanziDate = new Date(this.currentData()[ii].timestamp);
+				if (hanziDate.getTime() > date.getTime()) {
+					date = hanziDate;
+				}
+			} else {
+				var hanziDate = new Date(this.currentData()[ii].timestamp);
+				date = hanziDate;
+			}
+		}
+		return date;
+	};
+	
+	this.dateOfNewestHanziFormatted = ko.computed(function() {
+		var date = this.dateOfNewestHanzi();
+		return this.formatDate(date);
+	}, this);
+	
+	this.showReloadHintIfNecessary = function() {
+		var dateOfNewestHanzi = this.dateOfNewestHanzi();
+		var now = new Date();
+		if (dateOfNewestHanzi != null && now.getTime() - dateOfNewestHanzi.getTime() > 1000 * 60 * 60 * 24 * 5) {
+			alert("Das neueste Hanzi ist vom " + this.formatDate(dateOfNewestHanzi) + 
+			".\n\nLade die Seite neu (z.B. mit F5) und verwende dann\n" +
+			"\"Lade vom Server!\" unter \"Import/Export\" um\n" +
+			"die neuesten Daten zu verwenden.");
+		}
+	};
 	
 	this.generateNewSelection = function() {
 		// It is important to access the property this.currentData here, not the function this.currentData()
@@ -85,15 +135,16 @@ var HanziViewModel = function() {
 	
 	this.rebuildFromLocalStorage = function() {
 		this.currentData.removeAll();
-		var hanzi = initializeHanzi();
+		var hanzi = this.initializeHanzi();
 		for (var ii = 0; ii < hanzi.length; ++ii) {
 			this.currentData.push(hanzi[ii]);
 		}
 	};
 	
-	this.rebuildFromJson = function(dataFromJson) {
+	this.rebuildFromServerJson = function(dataFromJson) {
+		this.setDataFromServerIsUsed(true);
 		this.currentData.removeAll();
-		var dataAsHanzi = convertToHanzi(dataFromJson);
+		var dataAsHanzi = this.convertToHanzi(dataFromJson);
 		for (var ii = 0; ii < dataAsHanzi.length; ++ii) {
 			this.currentData.push(dataAsHanzi[ii]);
 		}
@@ -138,11 +189,12 @@ var HanziViewModel = function() {
 			var ta = $("#ta-import-export");
 			var json = ta.val();
 			var dataFromJson = JSON.parse(json);
-			var dataAsHanzi = convertToHanzi(dataFromJson);
+			var dataAsHanzi = this.convertToHanzi(dataFromJson);
 			$.jStorage.set("list-of-hanzi", dataAsHanzi);
 			vm.rebuildFromLocalStorage();
 			alert("Der Import war erfolgreich. Das Vokabular umfasst jetzt " + this.totalNumberOfHanzi() + " Hanzi.");
 			ta.val("");
+			this.setDataFromServerIsUsed(false);
 		} catch (exc) {
 			alert("Etwas ist schiefgegangen: " + exc);
 		}
@@ -161,7 +213,7 @@ var HanziViewModel = function() {
 	
 	this.loadJsonDataFromServer = function() {
 		$.getJSON('json/hanzi/2013-01-11.json', function(jsonData) {
-			vm.rebuildFromJson(jsonData);
+			vm.rebuildFromServerJson(jsonData);
 			alert("Das Laden der Hanzi aus der Datei auf dem Server war erfolgreich.\nDas Vokabular umfasst jetzt " + vm.totalNumberOfHanzi() + " Hanzi.");
 		});
 	};
@@ -199,8 +251,9 @@ var HanziViewModel = function() {
 				}
 			}
 			$.jStorage.set("list-of-hanzi", hanzi);
-			alert("Der Import war erfolgreich. Das Vokabular umfasst jetzt " + this.totalNumberOfHanzi() + " Hanzi.");
 			ta.val("");
+			this.setDataFromServerIsUsed(false);
+			alert("Der Import war erfolgreich. Das Vokabular umfasst jetzt " + this.totalNumberOfHanzi() + " Hanzi.");
 		} catch (exc) {
 			alert("Etwas ist schiefgegangen: " + exc);
 		}
@@ -241,4 +294,6 @@ function init() {
 	vm.numberOfHanziToGenerate.subscribe(function(newValue) {
 		$.jStorage.set("number-of-hanzi-to-generate", newValue);
 	});
+	
+	vm.showReloadHintIfNecessary();
 }
