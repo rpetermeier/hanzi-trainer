@@ -4,7 +4,7 @@
 	
 	$("#button-transform").click(function() {
 		var input = $("#ta-macro").val();
-		var trans = input.replace(/a1/g, "ā");
+		var trans = input.replace(/[^\{]a1[^\}]/g, "ā");
 		trans = trans.replace(/a2/g, "á");
 		trans = trans.replace(/a3/g, "ǎ");
 		trans = trans.replace(/a4/g, "à");
@@ -63,6 +63,8 @@
 		trans = trans.replace(/Ü2/g, "Ǘ");
 		trans = trans.replace(/Ü3/g, "Ǚ");
 		trans = trans.replace(/Ü4/g, "Ǜ");
+		
+		trans = trans.replace(/{}/g, "");
 
 		$("#ta-pinyin").val(trans);
 	});
