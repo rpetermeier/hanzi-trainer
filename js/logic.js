@@ -111,8 +111,8 @@ var HanziViewModel = function() {
 		var now = new Date();
 		if (dateOfNewestHanzi != null && now.getTime() - dateOfNewestHanzi.getTime() > 1000 * 60 * 60 * 24 * 1) {
 			alert("Das neueste Hanzi ist vom " + this.formatDate(dateOfNewestHanzi) + 
-			".\n\nLade die Seite neu (z.B. mit F5) und verwende dann" +
-			"\"Lade vom Server!\" unter \"Import/Export\" um" +
+			".\n\nLade die Seite neu (z.B. mit F5) und verwende dann " +
+			"\"Lade vom Server!\" unter \"Import/Export\" um " +
 			"die neuesten Daten zu verwenden.");
 		}
 	};
