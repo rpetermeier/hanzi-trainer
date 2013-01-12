@@ -38,7 +38,7 @@
 		<div id="tab-training">
 			<p>
 				<span>Du kennst momentan&nbsp;</span><span id="total-number-of-hanzi" data-bind="text: totalNumberOfHanzi"></span><span>&nbsp;Hanzi.</span>
-				<span data-bind="visible: dataFromServerIsUsed">Das neueste Hanzi ist vom <span id="date-of-newest-hanzi" data-bind="text: dateOfNewestHanziFormatted"></span><span>.</span></span>
+				<span data-bind="visible: showDateOfNewestHanzi">Das neueste Hanzi ist vom <span id="date-of-newest-hanzi" data-bind="text: dateOfNewestHanziFormatted"></span><span>.</span></span>
 			</p>
 			<p>
 				<label for="number-of-hanzi-to-generate">Sequenz von </label><input type="text" id="number-of-hanzi-to-generate" data-bind="value: numberOfHanziToGenerate"/>
