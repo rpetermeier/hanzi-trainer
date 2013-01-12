@@ -112,7 +112,7 @@ var HanziViewModel = function() {
 			var dateOfNewestHanzi = this.dateOfNewestHanzi();
 			var now = new Date();
 			if (dateOfNewestHanzi != null && now.getTime() - dateOfNewestHanzi.getTime() > 1000 * 60 * 60 * 24 * 3) {
-				alert("Das neueste Hanzi ist vom " + this.formatDate(dateOfNewestHanzi) + 
+				vm.alert("Hinweis", "Das neueste Hanzi ist vom " + this.formatDate(dateOfNewestHanzi) + 
 				".\n\nLade die Seite neu (z.B. mit F5) und verwende dann " +
 				"\"Lade vom Server!\" unter \"Import/Export\" um " +
 				"die neuesten Daten zu verwenden.");
@@ -195,11 +195,11 @@ var HanziViewModel = function() {
 			var dataAsHanzi = this.convertToHanzi(dataFromJson);
 			$.jStorage.set("list-of-hanzi", dataAsHanzi);
 			vm.rebuildFromLocalStorage();
-			alert("Der Import war erfolgreich. Das Vokabular umfasst jetzt " + this.totalNumberOfHanzi() + " Hanzi.");
+			this.alert("Import erfolgreich", "Der Import war erfolgreich.<br/>Das Vokabular umfasst jetzt " + this.totalNumberOfHanzi() + " Hanzi.");
 			ta.val("");
 			this.setDataFromServerIsUsed(false);
 		} catch (exc) {
-			alert("Etwas ist schiefgegangen: " + exc);
+			this.alert("Fehler", "Etwas ist schiefgegangen: " + exc);
 		}
 	};
 	
@@ -256,9 +256,9 @@ var HanziViewModel = function() {
 			$.jStorage.set("list-of-hanzi", hanzi);
 			ta.val("");
 			this.setDataFromServerIsUsed(false);
-			alert("Der Import war erfolgreich. Das Vokabular umfasst jetzt " + this.totalNumberOfHanzi() + " Hanzi.");
+			this.alert("Import erfolgreich", "Der Import war erfolgreich.<br/>Das Vokabular umfasst jetzt " + this.totalNumberOfHanzi() + " Hanzi.");
 		} catch (exc) {
-			alert("Etwas ist schiefgegangen: " + exc);
+			this.alert("Fehler", "Etwas ist schiefgegangen: " + exc);
 		}
 	};
 	
