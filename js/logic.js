@@ -217,7 +217,7 @@ var HanziViewModel = function() {
 	this.loadJsonDataFromServer = function() {
 		$.getJSON('json/hanzi/2013-01-11.json', function(jsonData) {
 			vm.rebuildFromServerJson(jsonData);
-			alert("Das Laden der Hanzi aus der Datei auf dem Server war erfolgreich.\nDas Vokabular umfasst jetzt " + vm.totalNumberOfHanzi() + " Hanzi.");
+			vm.alert("Laden war erfolgreich", "Das Laden der Hanzi aus der Datei auf dem Server war erfolgreich.<br/>Das Vokabular umfasst jetzt " + vm.totalNumberOfHanzi() + " Hanzi.");
 		});
 	};
 
@@ -261,6 +261,15 @@ var HanziViewModel = function() {
 			alert("Etwas ist schiefgegangen: " + exc);
 		}
 	};
+	
+	this.alert = function(title, message) {
+		var msg = $("#hanzi-trainer-alert-replacement-message");
+		msg.empty();
+		msg.append(message);
+		var dlg = $("#hanzi-trainer-alert-replacement");
+		dlg.dialog("option", "title", title);
+		dlg.dialog("open");
+	};
 };
 
 function init() {
@@ -296,6 +305,17 @@ function init() {
 	});
 	vm.numberOfHanziToGenerate.subscribe(function(newValue) {
 		$.jStorage.set("number-of-hanzi-to-generate", newValue);
+	});
+	
+	$("#hanzi-trainer-alert-replacement").dialog({
+		modal: true,
+		autoOpen: false,
+		buttons: {
+			Ok: function() {
+				$(this).dialog("close");
+			}
+		},
+		resizable: false
 	});
 	
 	vm.showReloadHintIfNecessary();
