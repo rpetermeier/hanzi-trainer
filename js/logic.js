@@ -79,7 +79,8 @@ var HanziViewModel = function() {
 		if (date != null) {
 			var month = date.getMonth() + 1;
 			month =  month < 10 ? ("0" + month) : ("" + month);
-			return date.getDate() + "." + month + "." + date.getFullYear();
+			var dayOfMonth = date.getDate() < 10 ? ("0" + date.getDate()) : ("" + date.getDate());
+			return dayOfMonth + "." + month + "." + date.getFullYear();
 		} else {
 			return "";
 		}
