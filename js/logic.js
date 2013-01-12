@@ -67,7 +67,7 @@ var HanziViewModel = function() {
 	}, this);
 
 	this.showDateOfNewestHanzi = ko.computed(function() {
-		return this.dataFromServerIsUsed && this.totalNumberOfHanzi() > 0;
+		return this.dataFromServerIsUsed() && this.totalNumberOfHanzi() > 0;
 	}, this);
 	
 	this.setDataFromServerIsUsed = function(dataFromServerIsUsed) {
@@ -107,13 +107,15 @@ var HanziViewModel = function() {
 	}, this);
 	
 	this.showReloadHintIfNecessary = function() {
-		var dateOfNewestHanzi = this.dateOfNewestHanzi();
-		var now = new Date();
-		if (dateOfNewestHanzi != null && now.getTime() - dateOfNewestHanzi.getTime() > 1000 * 60 * 60 * 24 * 1) {
-			alert("Das neueste Hanzi ist vom " + this.formatDate(dateOfNewestHanzi) + 
-			".\n\nLade die Seite neu (z.B. mit F5) und verwende dann " +
-			"\"Lade vom Server!\" unter \"Import/Export\" um " +
-			"die neuesten Daten zu verwenden.");
+		if (this.dataFromServerIsUsed()) {
+			var dateOfNewestHanzi = this.dateOfNewestHanzi();
+			var now = new Date();
+			if (dateOfNewestHanzi != null && now.getTime() - dateOfNewestHanzi.getTime() > 1000 * 60 * 60 * 24 * 1) {
+				alert("Das neueste Hanzi ist vom " + this.formatDate(dateOfNewestHanzi) + 
+				".\n\nLade die Seite neu (z.B. mit F5) und verwende dann " +
+				"\"Lade vom Server!\" unter \"Import/Export\" um " +
+				"die neuesten Daten zu verwenden.");
+			}
 		}
 	};
 	
