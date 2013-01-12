@@ -4,7 +4,7 @@
 	
 	$("#button-transform").click(function() {
 		var input = $("#ta-macro").val();
-		var trans = input.replace(/[^\{]a1[^\}]/g, "ā");
+		var trans = input.replace(/a1/g, "ā");
 		trans = trans.replace(/a2/g, "á");
 		trans = trans.replace(/a3/g, "ǎ");
 		trans = trans.replace(/a4/g, "à");
