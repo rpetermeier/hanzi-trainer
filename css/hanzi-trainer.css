@@ -19,6 +19,10 @@ h1 {
 	font-weight: bold;
 }
 
+#date-of-newest-hanzi-info {
+	font-size: 0.75em;
+}
+
 #intro-short {
 	font-weight: bold;
 	width: 450px;
