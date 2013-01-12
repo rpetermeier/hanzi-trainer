@@ -34,6 +34,36 @@
 		trans = trans.replace(/ü3/g, "ǚ");
 		trans = trans.replace(/ü4/g, "ǜ");
 		
+		trans = trans.replace(/A1/g, "Ā");
+		trans = trans.replace(/A2/g, "Á");
+		trans = trans.replace(/A3/g, "Ǎ");
+		trans = trans.replace(/A4/g, "À");
+		
+		trans = trans.replace(/E1/g, "Ē");
+		trans = trans.replace(/E2/g, "É");
+		trans = trans.replace(/E3/g, "Ě");
+		trans = trans.replace(/E4/g, "È");
+		
+		trans = trans.replace(/I1/g, "Ī");
+		trans = trans.replace(/I2/g, "Í");
+		trans = trans.replace(/I3/g, "Ǐ");
+		trans = trans.replace(/I4/g, "Ì");
+		
+		trans = trans.replace(/O1/g, "Ō");
+		trans = trans.replace(/O2/g, "Ó");
+		trans = trans.replace(/O3/g, "Ǒ");
+		trans = trans.replace(/O4/g, "Ò");
+
+		trans = trans.replace(/U1/g, "Ū");
+		trans = trans.replace(/U2/g, "Ú");
+		trans = trans.replace(/U3/g, "Ǔ");
+		trans = trans.replace(/U4/g, "Ù");
+
+		trans = trans.replace(/Ü1/g, "Ǖ");
+		trans = trans.replace(/Ü2/g, "Ǘ");
+		trans = trans.replace(/Ü3/g, "Ǚ");
+		trans = trans.replace(/Ü4/g, "Ǜ");
+
 		$("#ta-pinyin").val(trans);
 	});
 	
