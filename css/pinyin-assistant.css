@@ -13,3 +13,8 @@ blockquote {
 .machine-text {
 	font-family: Courier New;
 }
+
+#ta-pinyin {
+	background: PapayaWhip;
+	color: DarkSlateGray;
+}

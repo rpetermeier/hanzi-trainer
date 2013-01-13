@@ -75,6 +75,7 @@
 	});
 	
 	$("#ta-pinyin").attr("readonly", "readonly");
+	markAllTextOnFocus();
 
 	$("#pinyin-assistant-alert-replacement").dialog({
 		modal: true,
@@ -85,5 +86,30 @@
 			}
 		},
 		resizable: false
+	});
+}
+
+/* Mark all text in the output text area when it gets focus.
+   A little trick is used to make this work with WebKit: a timer
+   is necessary because apparently WebKit fires certain events 
+   too early. Source:
+   http://stackoverflow.com/questions/6201278/how-to-select-all-text-in-textarea-on-focus-in-safari
+*/
+function markAllTextOnFocus() {
+	$('#ta-pinyin').focus(function() {
+		var $this = $(this);
+
+		$this.select();
+
+		window.setTimeout(function() {
+			$this.select();
+		}, 1);
+
+		// Work around WebKit's little problem
+		$this.mouseup(function() {
+			// Prevent further mouseup intervention
+			$this.unbind("mouseup");
+			return false;
+		});
 	});
 }
