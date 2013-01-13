@@ -217,7 +217,7 @@ var HanziViewModel = function() {
 	this.loadJsonDataFromServer = function() {
 		$.getJSON('json/hanzi/2013-01-11.json', function(jsonData) {
 			vm.rebuildFromServerJson(jsonData);
-			vm.alert("Laden war erfolgreich", "Das Laden der Hanzi aus der Datei auf dem Server war erfolgreich.<br/>Das Vokabular umfasst jetzt " + vm.totalNumberOfHanzi() + " Hanzi.");
+			vm.alert("Laden war erfolgreich", "Das Laden der Hanzi vom Server war erfolgreich.<br/>Das Vokabular umfasst jetzt " + vm.totalNumberOfHanzi() + " Hanzi.");
 		});
 	};
 
