@@ -1,0 +1,15 @@
+h1 {
+	font-family: sans-serif;
+}
+
+blockquote {
+	font-size: 0.75em;
+}
+
+.marked-text {
+	font-style: italic;
+}
+
+.machine-text {
+	font-family: Courier New;
+}
