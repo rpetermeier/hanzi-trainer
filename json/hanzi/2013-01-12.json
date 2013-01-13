@@ -705,13 +705,25 @@
 		"timestamp" : "2013-01-10T19:37:29.417Z"
 	}, {
 		"pinyin" : "péng",
-		"hanzi" : "",
+		"hanzi" : "朋",
 		"german" : "Freund",
 		"timestamp" : "2013-01-11T18:00:01.310Z"
 	}, {
 		"pinyin" : "yǒu",
-		"hanzi" : "",
+		"hanzi" : "友",
 		"german" : "freundschaftlich",
 		"timestamp" : "2013-01-11T18:00:01.310Z"
+	}, {
+		"pinyin" : "huā",
+		"hanzi" : "花",
+		"german" : "aufwenden (Zeit, Geld); Blume; gemustert"
+	}, {
+		"pinyin" : "shì",
+		"hanzi" : "市",
+		"german" : "Markt, Stadt"
+	}, {
+		"pinyin" : "chǎng",
+		"hanzi" : "市",
+		"german" : "Platz; ZEW für Vorführungen"
 	}
 ]
