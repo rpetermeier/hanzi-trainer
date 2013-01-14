@@ -716,14 +716,22 @@
 	}, {
 		"pinyin" : "huā",
 		"hanzi" : "花",
-		"german" : "aufwenden (Zeit, Geld); Blume; gemustert"
+		"german" : "aufwenden (Zeit, Geld); Blume; gemustert",
+		"timestamp" : "2013-01-12T18:25:01.271Z"
 	}, {
 		"pinyin" : "shì",
 		"hanzi" : "市",
-		"german" : "Markt, Stadt"
+		"german" : "Markt, Stadt",
+		"timestamp" : "2013-01-13T19:57:15.426Z"
 	}, {
 		"pinyin" : "chǎng",
 		"hanzi" : "市",
-		"german" : "Platz; ZEW für Vorführungen"
+		"german" : "Platz; ZEW für Vorführungen",
+		"timestamp" : "2013-01-13T19:57:15.426Z"
+	}, {
+		"pinyin" : "diǎn",
+		"hanzi" : "点",
+		"german" : "Punkt, Tropfen; etwas; Essen bestellen; Uhr (Stunde)",
+		"timestamp" : "2013-01-14T20:02:10.168Z"
 	}
 ]
