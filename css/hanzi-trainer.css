@@ -37,6 +37,8 @@ h1 {
 	font-size: 2em;
 	font-family: sans-serif;
 	font-weight: bold;
+	white-space: nowrap;
+	overflow: visible;
 }
 
 #headline img {
