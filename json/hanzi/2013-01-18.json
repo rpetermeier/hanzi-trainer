@@ -748,6 +748,25 @@
 		"hanzi" : "就",
 		"german" : "eben, genau, sofort, dann, nur",
 		"timestamp" : "2013-01-17T19:18:13.655Z"
+	}, {
+		"pinyin" : "màn",
+		"hanzi" : "慢",
+		"german" : "langsam",
+		"timestamp" : "2013-01-18T18:21:53.576Z"
+	}, {
+		"pinyin" : "zǒu",
+		"hanzi" : "走",
+		"german" : "gehen, weggehen, losgehen",
+		"timestamp" : "2013-01-18T18:21:53.576Z"
+	}, {
+		"pinyin" : "cì",
+		"hanzi" : "次",
+		"german" : "Mal",
+		"timestamp" : "2013-01-18T18:21:53.576Z"
+	}, {
+		"pinyin" : "dìng",
+		"hanzi" : "定",
+		"german" : "festlegen; ruhig, gewiss",
+		"timestamp" : "2013-01-18T18:21:53.576Z"
 	}
 ]
-
