@@ -33,6 +33,17 @@ h1 {
 	font-weight: bold;
 }
 
+#headline {
+	font-size: 2em;
+	font-family: sans-serif;
+	font-weight: bold;
+}
+
+#headline img {
+	vertical-align: middle;
+	padding: 5px;
+}
+
 .ko-grid {
     background-color: White;
     border: 1px solid silver;
