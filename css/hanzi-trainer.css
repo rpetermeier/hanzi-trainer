@@ -41,7 +41,9 @@ h1 {
 
 #headline img {
 	vertical-align: middle;
-	padding: 5px;
+	padding-left: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 }
 
 .ko-grid {
