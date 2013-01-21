@@ -781,6 +781,12 @@
 	}, {
 		"pinyin" : "dé",
 		"hanzi" : "得",
-		"german" : "bekommen; es macht (Mathematik); fertig, basta; Komplementpartikel"
+		"german" : "bekommen; es macht (Mathematik); fertig, basta; Komplementpartikel",
+		"timestamp" : "2013-01-20T18:27:27.429Z"
+	}, {
+		"pinyin" : "ài",
+		"hanzi" : "爱",
+		"german" : "lieben, gerne haben",
+		"timestamp" : "2013-01-21T19:47:52.419Z"
 	}
 ]
