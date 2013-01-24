@@ -793,5 +793,25 @@
 		"hanzi" : "功",
 		"german" : "Beitrag, Verdienst, Leistung",
 		"timestamp" : "2013-01-22T16:04:37.514Z"
+	}, {
+		"pinyin" : "jiè",
+		"hanzi" : "介",
+		"german" : "jmd. mit jmd. bekannt machen; zwischen",
+		"timestamp" : "2013-01-23T20:32:32.120Z"
+	}, {
+		"pinyin" : "shào",
+		"hanzi" : "绍",
+		"german" : "weitermachen, fortführen",
+		"timestamp" : "2013-01-23T20:32:32.120Z"
+	}, {
+		"pinyin" : "xià",
+		"hanzi" : "下",
+		"german" : "mal; hinunter; aussteigen, etw. beenden; weniger als; folgend, nächst",
+		"timestamp" : "2013-01-23T20:32:32.120Z"
+	}, {
+		"pinyin" : "gào",
+		"hanzi" : "告",
+		"german" : "jdm. etw. sagen, mitteilen, jdn. informieren",
+		"timestamp" : "2013-01-24T14:47:25.130Z"
 	}
 ]
