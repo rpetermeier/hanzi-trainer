@@ -114,7 +114,7 @@ var HanziViewModel = function() {
 			if (dateOfNewestHanzi != null && now.getTime() - dateOfNewestHanzi.getTime() > 1000 * 60 * 60 * 24 * 5) {
 				vm.alert("Hinweis", "Das neueste Hanzi ist vom " + this.formatDate(dateOfNewestHanzi) + 
 				".\n\nLade die Seite neu (z.B. mit F5) und verwende dann " +
-				"\"Lade vom Server!\" unter \"Import/Export\" um " +
+				"\"Lade vom Server\" unter \"Import/Export\" um " +
 				"die neuesten Daten zu verwenden.");
 			}
 		}
@@ -180,8 +180,8 @@ var HanziViewModel = function() {
 	this.hint = ko.computed(function() {
 		if (this.currentData().length == 0) {
 			return "Zum Laden von Hanzi gehe auf den Reiter \"Import/Export über Excel\" und wähle dort entweder "
-				+ "\"Lade vom Server!\" oder kopiere den Inhalt einer eigenen Datei in das Textfeld "
-				+ "und wähle \"Importiere!\".";
+				+ "\"Lade vom Server\" oder kopiere den Inhalt einer eigenen Datei in das Textfeld "
+				+ "und wähle \"Importiere\".";
 		} else {
 			return "";
 		}
