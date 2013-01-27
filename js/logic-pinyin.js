@@ -27,15 +27,18 @@ ViewModel.prototype.init = function() {
 	});
 	$("#button-template").tooltip({
 		items: "button",
-		content: 'Hier klicken, um das obere Textfeld mit einem kleinen Beispieltext vorzubelegen.'
+		content: 'Hier klicken, um das obere Textfeld mit einem kleinen Beispieltext vorzubelegen.',
+		position: { my: "left+5 top+20", at: "right top" }
 	});
 	$("#button-empty").tooltip({
 		items: "button",
-		content: 'Hier klicken, um alles wegzuräumen.'
+		content: 'Hier klicken, um alles wegzuräumen.',
+		position: { my: "left+5 top+20", at: "right top" }
 	});
 	$("#button-transform").tooltip({
 		items: "button",
-		content: 'Hier klicken, um die Eingabe aus dem oberen Textfeld zu transformieren.'
+		content: 'Hier klicken, um die Eingabe aus dem oberen Textfeld zu transformieren.',
+		position: { my: "left+5 top+20", at: "right top" }
 	});
 	
 	$("#button-transform").click(function() {
