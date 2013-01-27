@@ -833,5 +833,15 @@
 		"hanzi" : "历",
 		"german" : "Zeitrechnung, Kalender",
 		"timestamp" : "2013-01-26T17:35:23.768Z"
+	}, {
+		"pinyin" : "zǎo",
+		"hanzi" : "早",
+		"german" : "Morgen; früh, längst",
+		"timestamp" : "2013-01-27T17:12:10.997Z"
+	}, {
+		"pinyin" : "shí",
+		"hanzi" : "时",
+		"german" : "Zeit, Uhrzeit, Jahreszeit; zeitweilig",
+		"timestamp" : "2013-01-27T17:12:10.997Z"
 	}
 ]
