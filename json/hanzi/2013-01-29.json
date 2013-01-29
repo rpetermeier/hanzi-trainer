@@ -848,5 +848,15 @@
 		"hanzi" : "诉",
 		"german" : "jdm. etwas mitteilen, sich beklagen, jdn. anklagen",
 		"timestamp" : "2013-01-28T19:58:45.908Z"
+	}, {
+		"pinyin" : "yuè",
+		"hanzi" : "月",
+		"german" : "Monat, Mond",
+		"timestamp" : "2013-01-29T17:56:23.148Z"
+	}, {
+		"pinyin" : "suì",
+		"hanzi" : "岁",
+		"german" : "(Lebens-)Jahr (Alter)",
+		"timestamp" : "2013-01-29T17:56:23.148Z"
 	}
 ]
