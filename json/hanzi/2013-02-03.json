@@ -873,5 +873,25 @@
 		"hanzi" : "间",
 		"german" : "zwischen; Raum, Zimmer; ZEW für Zimmer",
 		"timestamp" : "2013-02-01T17:52:21.416Z"
+	}, {
+		"pinyin" : "wǎn",
+		"hanzi" : "晚",
+		"german" : "Abend; spät",
+		"timestamp" : "2013-02-02T17:20:56.578Z"
+	}, {
+		"pinyin" : "yán",
+		"hanzi" : "言",
+		"german" : "Wort, Rede; sprechen",
+		"timestamp" : "2013-02-02T17:20:56.578Z"
+	}, {
+		"pinyin" : "cān",
+		"hanzi" : " 参",
+		"german" : "mitmachen, sich beteiligen",
+		"timestamp" : "2013-02-03T16:37:55.505Z"
+	}, {
+		"pinyin" : "qù",
+		"hanzi" : "去",
+		"german" : "(hin-)gehen, etw. beseitigen; voriger",
+		"timestamp" : "2013-02-03T16:37:55.505Z"
 	}
 ]
