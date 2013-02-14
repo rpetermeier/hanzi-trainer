@@ -913,5 +913,15 @@
 		"hanzi" : "年",
 		"german" : "Jahr",
 		"timestamp" : "2013-02-10T17:44:59.863Z"
+	}, {
+		"pinyin" : "fàn",
+		"hanzi" : "饭",
+		"german" : "Speise, (gekochter) Reis, Mahlzeit",
+		"timestamp" : "2013-02-11T19:27:42.225Z"
+	}, {
+		"pinyin" : "gè",
+		"hanzi" : "各",
+		"german" : "jeder; verschieden; jeweils",
+		"timestamp" : "2013-02-14T19:33:29.370Z"
 	}
 ]
