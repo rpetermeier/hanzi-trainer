@@ -48,6 +48,10 @@ h1 {
 	padding-bottom: 5px;
 }
 
+span#license {
+	font-size: 0.75em;
+}
+
 .ko-grid {
     background-color: White;
     border: 1px solid silver;
