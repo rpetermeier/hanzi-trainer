@@ -111,7 +111,7 @@ var HanziViewModel = function() {
 		if (this.dataFromServerIsUsed()) {
 			var dateOfNewestHanzi = this.dateOfNewestHanzi();
 			var now = new Date();
-			if (dateOfNewestHanzi != null && now.getTime() - dateOfNewestHanzi.getTime() > 1000 * 60 * 60 * 24 * 5) {
+			if (dateOfNewestHanzi != null && now.getTime() - dateOfNewestHanzi.getTime() > 1000 * 60 * 60 * 24 * 7) {
 				vm.alert("Hinweis", "Das neueste Hanzi ist vom " + this.formatDate(dateOfNewestHanzi) + 
 				".\n\nLade die Seite neu (z.B. mit F5) und verwende dann " +
 				"\"Lade vom Server\" unter \"Import/Export\" um " +
@@ -215,7 +215,7 @@ var HanziViewModel = function() {
 	};
 	
 	this.loadJsonDataFromServer = function() {
-		$.getJSON('json/hanzi/2013-03-03.json', function(jsonData) {
+		$.getJSON('json/hanzi/2013-03-09.json', function(jsonData) {
 			vm.rebuildFromServerJson(jsonData);
 			vm.alert("Laden war erfolgreich", "Das Laden der Hanzi vom Server war erfolgreich.<br/>Das Vokabular umfasst jetzt " + vm.totalNumberOfHanzi() + " Hanzi.");
 		});
