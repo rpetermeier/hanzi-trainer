@@ -32,7 +32,7 @@ Hanzi.prototype.hanziIfVisible = function(showHanzi) {
 }
 var HanziViewModel = function() {
 	this.convertToHanzi = function(dataFromJson) {
-		var data = [];
+		var data = []; 
 		if (dataFromJson != null) {
 			for (var ii = 0; ii < dataFromJson.length; ++ii) {
 				data[ii] = new Hanzi(dataFromJson[ii].pinyin, dataFromJson[ii].hanzi, dataFromJson[ii].german, dataFromJson[ii].timestamp);
@@ -215,7 +215,7 @@ var HanziViewModel = function() {
 	};
 	
 	this.loadJsonDataFromServer = function() {
-		$.getJSON('json/hanzi/2013-05-30.json', function(jsonData) {
+		$.getJSON('json/hanzi/2013-06-10.json', function(jsonData) {
 			vm.rebuildFromServerJson(jsonData);
 			vm.alert("Laden war erfolgreich", "Das Laden der Hanzi vom Server war erfolgreich.<br/>Das Vokabular umfasst jetzt " + vm.totalNumberOfHanzi() + " Hanzi.");
 		});
