@@ -1188,5 +1188,20 @@
 		"hanzi" : "如",
 		"german" : "so gut wie (nur verneint), wie",
 		"timestamp" : "2013-10-10T19:17:21.218Z"
+	}, {
+		"pinyin" : "ma",
+		"hanzi" : "嘛",
+		"german" : "Partikel, der anzeigt dass etwas offensichtlich ist",
+		"timestamp" : "2013-10-14T18:12:21.234Z"
+	}, {
+		"pinyin" : "fǒu",
+		"hanzi" : "否",
+		"german" : "nein",
+		"timestamp" : "2013-10-14T18:12:21.234Z"
+	}, {
+		"pinyin" : "méi",
+		"hanzi" : "没",
+		"german" : "nicht (Verneinung bei \"haben\")",
+		"timestamp" : "2013-10-18T19:15:28.723Z"
 	}
 ]
