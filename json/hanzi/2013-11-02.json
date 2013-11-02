@@ -1203,5 +1203,15 @@
 		"hanzi" : "没",
 		"german" : "nicht (Verneinung bei \"haben\")",
 		"timestamp" : "2013-10-18T19:15:28.723Z"
+	}, {
+		"pinyin" : "nǎo",
+		"hanzi" : "脑",
+		"german" : "Gehirn, Kopf",
+		"timestamp" : "2013-11-02T17:33:38.050Z"
+	}, {
+		"pinyin" : "huǒ",
+		"hanzi" : "火",
+		"german" : "Feuer, innere Hitze, Wut",
+		"timestamp" : "2013-11-02T17:33:38.050Z"
 	}
 ]
