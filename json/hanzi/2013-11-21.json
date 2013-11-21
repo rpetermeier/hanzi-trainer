@@ -1204,6 +1204,21 @@
 		"german" : "nicht (Verneinung bei \"haben\")",
 		"timestamp" : "2013-10-18T19:15:28.723Z"
 	}, {
+		"pinyin" : "tián",
+		"hanzi" : "田",
+		"german" : "Feld",
+		"timestamp" : "2013-10-20T17:51:45.933Z"
+	}, {
+		"pinyin" : "tiān",
+		"hanzi" : "添 ",
+		"german" : "hinzufügen, dazugeben",
+		"timestamp" : "2013-10-20T17:51:45.933Z"
+	}, {
+		"pinyin" : "wǎng",
+		"hanzi" : "网",
+		"german" : "Netz, Maschen",
+		"timestamp" : "2013-10-22T17:26:12.455Z"
+	}, {
 		"pinyin" : "nǎo",
 		"hanzi" : "脑",
 		"german" : "Gehirn, Kopf",
@@ -1213,5 +1228,15 @@
 		"hanzi" : "火",
 		"german" : "Feuer, innere Hitze, Wut",
 		"timestamp" : "2013-11-02T17:33:38.050Z"
+	}, {
+		"pinyin" : "dāng",
+		"hanzi" : "当",
+		"german" : "etw. sollte/müsste; tätig sein als",
+		"timestamp" : "2013-11-04T16:03:52.051Z"
+	}, {
+		"pinyin" : "cháng",
+		"hanzi" : "长",
+		"german" : "lang (Ausmaß), lange (Dauer)",
+		"timestamp" : "2013-11-21T18:08:46.100Z"
 	}
 ]
