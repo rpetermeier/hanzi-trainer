@@ -1238,5 +1238,13 @@
 		"hanzi" : "长",
 		"german" : "lang (Ausmaß), lange (Dauer)",
 		"timestamp" : "2013-11-21T18:08:46.100Z"
-	}
+	}, {
+	"pinyin" : "cóng",
+	"hanzi" : "从",
+	"german" : "von, jemals, folgen"
+},{
+	"pinyin" : "dào",
+	"hanzi" : "到",
+	"german" : "nach, bis, ankommen"
+}
 ]
