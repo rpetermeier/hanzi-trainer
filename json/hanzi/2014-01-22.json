@@ -1283,5 +1283,25 @@
 		"hanzi" : "息 ",
 		"german" : "Pause machen; Atem, Information, Zins",
 		"timestamp" : "2014-01-07T16:10:05.403Z"
+	}, {
+		"pinyin" : "zhù",
+		"hanzi" : "助",
+		"german" : "helfen, unterstützen",
+		"timestamp" : "2014-01-13T18:42:41.889Z"
+	}, {
+		"pinyin" : "shuāng",
+		"hanzi" : "双",
+		"german" : "das Paar; ZEW für Paare und Dinge in Paaren",
+		"timestamp" : "2014-01-20T20:45:53.695Z"
+	}, {
+		"pinyin" : "dēng",
+		"hanzi" : "灯",
+		"german" : "Lampe, elektrisches Licht",
+		"timestamp" : "2014-01-20T20:45:53.695Z"
+	}, {
+		"pinyin" : "bīng",
+		"hanzi" : "冰",
+		"german" : "Eis; etw. kühlen (mit Eis)",
+		"timestamp" : "2014-01-22T20:48:37.712Z"
 	}
 ]
