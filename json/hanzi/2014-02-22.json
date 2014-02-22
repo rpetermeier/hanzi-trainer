@@ -1313,5 +1313,30 @@
 		"hanzi" : "直",
 		"german" : "direkt, gerade, aufrecht, senkrecht, aufrichtig; ständig; Familienname",
 		"timestamp" : "2014-01-31T16:58:42.049Z"
+	}, {
+		"pinyin" : "qì",
+		"hanzi" : "汽",
+		"german" : "(Wasser-)Dampf",
+		"timestamp" : "2014-02-03T15:44:57.312Z"
+	}, {
+		"pinyin" : "chē",
+		"hanzi" : "车",
+		"german" : "Wagen, Fahrzeug, Räderwerk, Maschine",
+		"timestamp" : "2014-02-03T15:44:57.312Z"
+	}, {
+		"pinyin" : "biàn",
+		"hanzi" : "便",
+		"german" : "passend, angenehm; auf die Toilette müssen",
+		"timestamp" : "2014-02-09T12:24:00.299Z"
+	}, {
+		"pinyin" : "chǎo",
+		"hanzi" : "吵",
+		"german" : "Lärm machen, stören, streiten",
+		"timestamp" : "2014-02-10T16:33:17.933Z"
+	}, {
+		"pinyin" : "wèi",
+		"hanzi" : "卫",
+		"german" : "etw. abwehren, verteidigen, beschützen, bewahren; Abwehr (Sport); Familienname",
+		"timestamp" : "2014-02-17T16:59:22.710Z"
 	}
 ]
