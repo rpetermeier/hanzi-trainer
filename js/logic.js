@@ -215,7 +215,7 @@ var HanziViewModel = function() {
 	};
 	
 	this.loadJsonDataFromServer = function() {
-		$.getJSON('json/hanzi/2014-02-22.json', function(jsonData) {
+		$.getJSON('json/hanzi/2014-03-08.json', function(jsonData) {
 			vm.rebuildFromServerJson(jsonData);
 			vm.alert("Laden war erfolgreich", "Das Laden der Hanzi vom Server war erfolgreich.<br/>Das Vokabular umfasst jetzt " + vm.totalNumberOfHanzi() + " Hanzi.");
 		});
@@ -251,72 +251,72 @@ var HanziViewModel = function() {
 			for (var ii = 0; ii < hanzi.length; ++ii) {
 				if (hanzi[ii] != null) {
 					this.currentData.push(hanzi[ii]);
-				}
-			}
-			$.jStorage.set("list-of-hanzi", hanzi);
-			ta.val("");
-			this.setDataFromServerIsUsed(false);
-			this.alert("Import erfolgreich", "Der Import war erfolgreich.<br/>Das Vokabular umfasst jetzt " + this.totalNumberOfHanzi() + " Hanzi.");
-		} catch (exc) {
-			this.alert("Fehler", "Etwas ist schiefgegangen: " + exc);
-		}
-	};
-	
-	this.alert = function(title, message) {
-		var msg = $("#hanzi-trainer-alert-replacement-message");
-		msg.empty();
-		msg.append(message);
-		var dlg = $("#hanzi-trainer-alert-replacement");
-		dlg.dialog("option", "title", title);
-		dlg.dialog("open");
-	};
+}
+}
+$.jStorage.set("list-of-hanzi", hanzi);
+ta.val("");
+this.setDataFromServerIsUsed(false);
+this.alert("Import erfolgreich", "Der Import war erfolgreich.<br/>Das Vokabular umfasst jetzt " + this.totalNumberOfHanzi() + " Hanzi.");
+} catch (exc) {
+    this.alert("Fehler", "Etwas ist schiefgegangen: " + exc);
+}
+};
+
+this.alert = function(title, message) {
+    var msg = $("#hanzi-trainer-alert-replacement-message");
+    msg.empty();
+    msg.append(message);
+    var dlg = $("#hanzi-trainer-alert-replacement");
+    dlg.dialog("option", "title", title);
+    dlg.dialog("open");
+};
 };
 
 function init() {
-	$("#tabs").tabs();
-	$("button").button();
-	// Binding currently does not work correctly with a spinner;
-	// probably some custom code is needed for this to work
-	// $("#number-of-hanzi-to-generate").spinner();
-	$("#button-export").click(function() { vm.exportJsonData(); } );
-	$("#button-import").click(function() { vm.importJsonData(); });
-	$("#button-clear-import-export").click(function() {
-		var ta = $("#ta-import-export");
-		ta.val("");
-	});
-	$("#button-load-from-server").click(function() { vm.loadJsonDataFromServer(); } );
-	$("#button-load-from-server-excel").click(function() { vm.loadJsonDataFromServer(); } );
-	$("#button-export-excel").click(function() {
-		vm.exportToExcel();
-	});
-	$("#button-import-excel").click(function() {
-		vm.importFromExcel();
-	});
-	$("#button-clear-import-export-excel").click(function() {
-		var ta = $("#ta-import-export-excel");
-		ta.val("");
-	});
-	vm = new HanziViewModel();
-		
-	ko.applyBindings(vm);
-	vm.showSolution.subscribe(function(newValue) {
-		$.jStorage.set("show-solution", newValue);
-		vm.refreshGrid();
-	});
-	vm.numberOfHanziToGenerate.subscribe(function(newValue) {
-		$.jStorage.set("number-of-hanzi-to-generate", newValue);
-	});
-	
-	$("#hanzi-trainer-alert-replacement").dialog({
-		modal: true,
-		autoOpen: false,
-		buttons: {
-			Ok: function() {
-				$(this).dialog("close");
-			}
-		},
-		resizable: false
-	});
-	
-	vm.showReloadHintIfNecessary();
+    $("#tabs").tabs();
+    $("button").button();
+    // Binding currently does not work correctly with a spinner;
+    // probably some custom code is needed for this to work
+    // $("#number-of-hanzi-to-generate").spinner();
+    $("#button-export").click(function() { vm.exportJsonData(); } );
+    $("#button-import").click(function() { vm.importJsonData(); });
+    $("#button-clear-import-export").click(function() {
+        var ta = $("#ta-import-export");
+        ta.val("");
+    });
+    $("#button-load-from-server").click(function() { vm.loadJsonDataFromServer(); } );
+    $("#button-load-from-server-excel").click(function() { vm.loadJsonDataFromServer(); } );
+    $("#button-export-excel").click(function() {
+        vm.exportToExcel();
+    });
+    $("#button-import-excel").click(function() {
+        vm.importFromExcel();
+    });
+    $("#button-clear-import-export-excel").click(function() {
+        var ta = $("#ta-import-export-excel");
+        ta.val("");
+    });
+    vm = new HanziViewModel();
+
+    ko.applyBindings(vm);
+    vm.showSolution.subscribe(function(newValue) {
+        $.jStorage.set("show-solution", newValue);
+        vm.refreshGrid();
+    });
+    vm.numberOfHanziToGenerate.subscribe(function(newValue) {
+        $.jStorage.set("number-of-hanzi-to-generate", newValue);
+    });
+
+    $("#hanzi-trainer-alert-replacement").dialog({
+        modal: true,
+        autoOpen: false,
+        buttons: {
+            Ok: function() {
+                $(this).dialog("close");
+            }
+        },
+        resizable: false
+    });
+
+    vm.showReloadHintIfNecessary();
 }

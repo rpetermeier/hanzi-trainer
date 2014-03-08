@@ -1,0 +1,1628 @@
+﻿[
+    {
+        "pinyin": "nǐ",
+        "hanzi": "你",
+        "german": "du",
+        "timestamp": "2012-12-27T12:59:11.782Z"
+    },
+    {
+        "pinyin": "hǎo",
+        "hanzi": "好",
+        "german": "gut",
+        "timestamp": "2012-12-27T12:59:12.328Z"
+    },
+    {
+        "pinyin": "ma",
+        "hanzi": "吗",
+        "german": "Partikel für Fragen",
+        "timestamp": "2012-12-27T12:59:12.765Z"
+    },
+    {
+        "pinyin": "tiān",
+        "hanzi": "天",
+        "german": "Himmel",
+        "timestamp": "2012-12-27T12:59:13.170Z"
+    },
+    {
+        "pinyin": "qì",
+        "hanzi": "气",
+        "german": "Gas, Luft, Geruch",
+        "timestamp": "2012-12-27T12:59:13.622Z"
+    },
+    {
+        "pinyin": "rén",
+        "hanzi": "人",
+        "german": "Mensch",
+        "timestamp": "2012-12-27T14:51:44.853Z"
+    },
+    {
+        "pinyin": "hàn",
+        "hanzi": "汉",
+        "german": "chinesisch",
+        "timestamp": "2012-12-27T15:04:37.529Z"
+    },
+    {
+        "pinyin": "hěn",
+        "hanzi": "很",
+        "german": "sehr",
+        "timestamp": "2012-12-27T16:03:23.061Z"
+    },
+    {
+        "pinyin": "bù",
+        "hanzi": "不",
+        "german": "nicht",
+        "timestamp": "2012-12-27T16:03:23.062Z"
+    },
+    {
+        "pinyin": "máng",
+        "hanzi": "忙",
+        "german": "beschäftigt",
+        "timestamp": "2012-12-27T16:03:23.062Z"
+    },
+    {
+        "pinyin": "xíng",
+        "hanzi": "行",
+        "german": "gehen",
+        "timestamp": "2012-12-27T16:03:23.062Z"
+    },
+    {
+        "pinyin": "jiào",
+        "hanzi": "叫",
+        "german": "heißen (Vorname)",
+        "timestamp": "2012-12-27T16:03:23.062Z"
+    },
+    {
+        "pinyin": "yào",
+        "hanzi": "要",
+        "german": "wollen, müssen",
+        "timestamp": "2012-12-27T16:03:23.062Z"
+    },
+    {
+        "pinyin": "yǒu",
+        "hanzi": "有",
+        "german": "haben; es gibt",
+        "timestamp": "2012-12-27T16:03:23.062Z"
+    },
+    {
+        "pinyin": "wǒ",
+        "hanzi": "我",
+        "german": "ich",
+        "timestamp": "2012-12-27T16:03:23.062Z"
+    },
+    {
+        "pinyin": "tā",
+        "hanzi": "他",
+        "german": "er",
+        "timestamp": "2012-12-27T16:03:23.062Z"
+    },
+    {
+        "pinyin": "tā",
+        "hanzi": "她",
+        "german": "sie",
+        "timestamp": "2012-12-27T16:03:23.062Z"
+    },
+    {
+        "pinyin": "yě",
+        "hanzi": "也",
+        "german": "auch",
+        "timestamp": "2012-12-27T16:03:23.062Z"
+    },
+    {
+        "pinyin": "hái",
+        "hanzi": "还",
+        "german": "noch",
+        "timestamp": "2012-12-27T16:03:23.062Z"
+    },
+    {
+        "pinyin": "tài",
+        "hanzi": "太",
+        "german": "zu (Adverb)",
+        "timestamp": "2012-12-27T16:03:23.062Z"
+    },
+    {
+        "pinyin": "guì",
+        "hanzi": "贵",
+        "german": "teuer",
+        "timestamp": "2012-12-27T16:03:23.062Z"
+    },
+    {
+        "pinyin": "gāo",
+        "hanzi": "高",
+        "german": "groß, hoch, lang (Person); Größe",
+        "timestamp": "2012-12-27T16:03:23.062Z"
+    },
+    {
+        "pinyin": "xiǎo",
+        "hanzi": "小",
+        "german": "klein",
+        "timestamp": "2012-12-27T16:03:23.062Z"
+    },
+    {
+        "pinyin": "dà",
+        "hanzi": "大",
+        "german": "groß (Fläche, allgemein)",
+        "timestamp": "2012-12-27T16:03:23.062Z"
+    },
+    {
+        "pinyin": "lǎo",
+        "hanzi": "老",
+        "german": "alt, weise",
+        "timestamp": "2012-12-27T16:03:23.062Z"
+    },
+    {
+        "pinyin": "shì",
+        "hanzi": "是",
+        "german": "sein",
+        "timestamp": "2012-12-27T16:03:23.062Z"
+    },
+    {
+        "pinyin": "mǎi",
+        "hanzi": "买",
+        "german": "kaufen",
+        "timestamp": "2012-12-27T16:03:23.062Z"
+    },
+    {
+        "pinyin": "mài",
+        "hanzi": "卖",
+        "german": "verkaufen",
+        "timestamp": "2012-12-27T16:03:23.062Z"
+    },
+    {
+        "pinyin": "shuǐ",
+        "hanzi": "水",
+        "german": "Wasser",
+        "timestamp": "2012-12-27T16:03:23.062Z"
+    },
+    {
+        "pinyin": "yǔ",
+        "hanzi": "语",
+        "german": "Sprache",
+        "timestamp": "2012-12-27T16:03:23.062Z"
+    },
+    {
+        "pinyin": "dé",
+        "hanzi": "德",
+        "german": "tugendhaft; deutsch",
+        "timestamp": "2012-12-27T16:03:23.062Z"
+    },
+    {
+        "pinyin": "guó",
+        "hanzi": "国",
+        "german": "Land",
+        "timestamp": "2012-12-27T16:03:23.062Z"
+    },
+    {
+        "pinyin": "měi",
+        "hanzi": "美",
+        "german": "schön",
+        "timestamp": "2012-12-27T16:03:23.062Z"
+    },
+    {
+        "pinyin": "shū",
+        "hanzi": "书",
+        "german": "Buch",
+        "timestamp": "2012-12-27T16:03:23.062Z"
+    },
+    {
+        "pinyin": "fǎ",
+        "hanzi": "法",
+        "german": "Gesetz",
+        "timestamp": "2012-12-27T16:03:23.062Z"
+    },
+    {
+        "pinyin": "pǐn",
+        "hanzi": "品",
+        "german": "Artikel",
+        "timestamp": "2012-12-27T16:03:23.062Z"
+    },
+    {
+        "pinyin": "kàn",
+        "hanzi": "看",
+        "german": "sehen",
+        "timestamp": "2012-12-27T16:03:23.062Z"
+    },
+    {
+        "pinyin": "biǎo",
+        "hanzi": "表",
+        "german": "zeigen; Oberfläche",
+        "timestamp": "2012-12-27T16:03:23.062Z"
+    },
+    {
+        "pinyin": "dǎ",
+        "hanzi": "打",
+        "german": "kämpfen, schlagen",
+        "timestamp": "2012-12-27T16:03:23.062Z"
+    },
+    {
+        "pinyin": "gěi",
+        "hanzi": "给",
+        "german": "geben, schenken",
+        "timestamp": "2012-12-27T16:03:23.062Z"
+    },
+    {
+        "pinyin": "chá",
+        "hanzi": "茶",
+        "german": "Tee",
+        "timestamp": "2012-12-27T16:03:23.062Z"
+    },
+    {
+        "pinyin": "yè",
+        "hanzi": "叶",
+        "german": "Blatt (Pflanze)",
+        "timestamp": "2012-12-27T16:03:23.062Z"
+    },
+    {
+        "pinyin": "bāo",
+        "hanzi": "包",
+        "german": "Tasche",
+        "timestamp": "2012-12-27T16:03:23.062Z"
+    },
+    {
+        "pinyin": "jiǔ",
+        "hanzi": "久",
+        "german": "lange (Zeit)",
+        "timestamp": "2012-12-27T16:03:23.062Z"
+    },
+    {
+        "pinyin": "jiàn",
+        "hanzi": "见",
+        "german": "sehen",
+        "timestamp": "2012-12-27T16:03:23.062Z"
+    },
+    {
+        "pinyin": "shí",
+        "hanzi": "识",
+        "german": "wissen; Wissen",
+        "timestamp": "2012-12-27T16:03:23.062Z"
+    },
+    {
+        "pinyin": "jìn",
+        "hanzi": "晋",
+        "german": "eintreten; voranschreiten; befördern",
+        "timestamp": "2012-12-27T16:03:23.062Z"
+    },
+    {
+        "pinyin": "duō",
+        "hanzi": "多",
+        "german": "viel",
+        "timestamp": "2012-12-27T16:03:23.062Z"
+    },
+    {
+        "pinyin": "shǎo",
+        "hanzi": "少",
+        "german": "wenig",
+        "timestamp": "2012-12-27T16:03:23.062Z"
+    },
+    {
+        "pinyin": "kě",
+        "hanzi": "可",
+        "german": "wirklich (Partikel)",
+        "timestamp": "2012-12-27T16:03:23.062Z"
+    },
+    {
+        "pinyin": "ne",
+        "hanzi": "呢",
+        "german": "Partikel",
+        "timestamp": "2012-12-27T16:03:23.062Z"
+    },
+    {
+        "pinyin": "me",
+        "hanzi": "么",
+        "german": "Partikel",
+        "timestamp": "2012-12-27T16:03:23.062Z"
+    },
+    {
+        "pinyin": "le",
+        "hanzi": "了",
+        "german": "Partikel",
+        "timestamp": "2012-12-27T16:03:23.062Z"
+    },
+    {
+        "pinyin": "ba",
+        "hanzi": "吧",
+        "german": "Partikel",
+        "timestamp": "2012-12-27T16:03:23.062Z"
+    },
+    {
+        "pinyin": "shén",
+        "hanzi": "什",
+        "german": "was",
+        "timestamp": "2012-12-27T16:03:23.062Z"
+    },
+    {
+        "pinyin": "shéi",
+        "hanzi": "谁",
+        "german": "wer",
+        "timestamp": "2012-12-27T16:03:23.062Z"
+    },
+    {
+        "pinyin": "zhōng",
+        "hanzi": "中",
+        "german": "chinesisch",
+        "timestamp": "2012-12-27T16:03:23.062Z"
+    },
+    {
+        "pinyin": "yuán",
+        "hanzi": "元",
+        "german": "Yuan (Währungseinheit)",
+        "timestamp": "2012-12-27T16:03:23.062Z"
+    },
+    {
+        "pinyin": "xiā",
+        "hanzi": "瞎",
+        "german": "blind; blindlings",
+        "timestamp": "2012-12-27T16:03:23.062Z"
+    },
+    {
+        "pinyin": "shuō",
+        "hanzi": "说",
+        "german": "reden",
+        "timestamp": "2012-12-27T16:03:23.062Z"
+    },
+    {
+        "pinyin": "huà",
+        "hanzi": "话",
+        "german": "Sprache",
+        "timestamp": "2012-12-27T16:03:23.062Z"
+    },
+    {
+        "pinyin": "míng",
+        "hanzi": "名",
+        "german": "Name",
+        "timestamp": "2012-12-27T16:03:23.062Z"
+    },
+    {
+        "pinyin": "míng",
+        "hanzi": "明",
+        "german": "klar; morgen",
+        "timestamp": "2012-12-27T16:03:23.062Z"
+    },
+    {
+        "pinyin": "jīn",
+        "hanzi": "今",
+        "german": "heute",
+        "timestamp": "2012-12-27T16:03:23.062Z"
+    },
+    {
+        "pinyin": "zì",
+        "hanzi": "字",
+        "german": "Zeichen",
+        "timestamp": "2012-12-27T16:03:23.062Z"
+    },
+    {
+        "pinyin": "tóng",
+        "hanzi": "同",
+        "german": "auch",
+        "timestamp": "2012-12-27T16:03:23.062Z"
+    },
+    {
+        "pinyin": "xué",
+        "hanzi": "学",
+        "german": "lernen",
+        "timestamp": "2012-12-27T16:03:23.062Z"
+    },
+    {
+        "pinyin": "dōng",
+        "hanzi": "东",
+        "german": "Osten",
+        "timestamp": "2012-12-27T16:03:23.062Z"
+    },
+    {
+        "pinyin": "xī",
+        "hanzi": "西",
+        "german": "Westen",
+        "timestamp": "2012-12-27T16:03:23.062Z"
+    },
+    {
+        "pinyin": "zài",
+        "hanzi": "再",
+        "german": "wieder, nochmals",
+        "timestamp": "2012-12-27T16:03:23.062Z"
+    },
+    {
+        "pinyin": "líng",
+        "hanzi": "〇",
+        "german": "0",
+        "timestamp": "2012-12-27T16:03:23.062Z"
+    },
+    {
+        "pinyin": "yī",
+        "hanzi": "一",
+        "german": "1",
+        "timestamp": "2012-12-27T16:03:23.062Z"
+    },
+    {
+        "pinyin": "èr",
+        "hanzi": "二",
+        "german": "2",
+        "timestamp": "2012-12-27T16:03:23.062Z"
+    },
+    {
+        "pinyin": "sān",
+        "hanzi": "三",
+        "german": "3",
+        "timestamp": "2012-12-27T16:03:23.062Z"
+    },
+    {
+        "pinyin": "sì",
+        "hanzi": "四",
+        "german": "4",
+        "timestamp": "2012-12-27T16:03:23.062Z"
+    },
+    {
+        "pinyin": "wǔ",
+        "hanzi": "五",
+        "german": "5",
+        "timestamp": "2012-12-27T16:03:23.062Z"
+    },
+    {
+        "pinyin": "liù",
+        "hanzi": "六",
+        "german": "6",
+        "timestamp": "2012-12-27T16:03:23.062Z"
+    },
+    {
+        "pinyin": "qī",
+        "hanzi": "七",
+        "german": "7",
+        "timestamp": "2012-12-27T16:03:23.062Z"
+    },
+    {
+        "pinyin": "bā",
+        "hanzi": "八",
+        "german": "8",
+        "timestamp": "2012-12-27T16:03:23.062Z"
+    },
+    {
+        "pinyin": "jiǔ",
+        "hanzi": "九",
+        "german": "9",
+        "timestamp": "2012-12-27T16:03:23.062Z"
+    },
+    {
+        "pinyin": "shí",
+        "hanzi": "十",
+        "german": "10",
+        "timestamp": "2012-12-27T16:03:23.062Z"
+    },
+    {
+        "pinyin": "bǎi",
+        "hanzi": "百",
+        "german": "100",
+        "timestamp": "2012-12-27T16:03:23.062Z"
+    },
+    {
+        "pinyin": "qiān",
+        "hanzi": "千",
+        "german": "1000",
+        "timestamp": "2012-12-27T16:03:23.062Z"
+    },
+    {
+        "pinyin": "zì",
+        "hanzi": "自",
+        "german": "selbst",
+        "timestamp": "2012-12-27T16:03:23.062Z"
+    },
+    {
+        "pinyin": "jǐ",
+        "hanzi": "己",
+        "german": "selbst",
+        "timestamp": "2012-12-27T16:03:23.062Z"
+    },
+    {
+        "pinyin": "zán",
+        "hanzi": "咱",
+        "german": "wir",
+        "timestamp": "2012-12-27T16:03:23.062Z"
+    },
+    {
+        "pinyin": "men",
+        "hanzi": "们",
+        "german": "Plural-Suffix",
+        "timestamp": "2012-12-27T16:03:23.062Z"
+    },
+    {
+        "pinyin": "wáng",
+        "hanzi": "王",
+        "german": "König",
+        "timestamp": "2012-12-27T16:03:23.062Z"
+    },
+    {
+        "pinyin": "qǐng",
+        "hanzi": "请",
+        "german": "bitten; einladen",
+        "timestamp": "2012-12-27T16:03:23.062Z"
+    },
+    {
+        "pinyin": "wèn",
+        "hanzi": "问",
+        "german": "fragen",
+        "timestamp": "2012-12-27T16:03:23.062Z"
+    },
+    {
+        "pinyin": "shǒu",
+        "hanzi": "手",
+        "german": "Hand",
+        "timestamp": "2012-12-27T16:03:23.062Z"
+    },
+    {
+        "pinyin": "jī",
+        "hanzi": "机",
+        "german": "Maschine",
+        "timestamp": "2012-12-27T16:03:23.062Z"
+    },
+    {
+        "pinyin": "hào",
+        "hanzi": "号",
+        "german": "Zahl, Nummer, Code",
+        "timestamp": "2012-12-27T16:03:23.062Z"
+    },
+    {
+        "pinyin": "mǎ",
+        "hanzi": "码",
+        "german": "Zahl, Nummer",
+        "timestamp": "2012-12-27T16:03:23.062Z"
+    },
+    {
+        "pinyin": "mǎ",
+        "hanzi": "马",
+        "german": "Pferd",
+        "timestamp": "2012-12-27T16:03:23.062Z"
+    },
+    {
+        "pinyin": "kǒu",
+        "hanzi": "口",
+        "german": "Mund; ZEW für Familienmitglieder",
+        "timestamp": "2012-12-27T16:03:23.062Z"
+    },
+    {
+        "pinyin": "ge",
+        "hanzi": "个",
+        "german": "ZEW für Personen und Allgemeines",
+        "timestamp": "2012-12-27T16:03:23.062Z"
+    },
+    {
+        "pinyin": "zhī",
+        "hanzi": "知",
+        "german": "wissen",
+        "timestamp": "2012-12-27T16:03:23.062Z"
+    },
+    {
+        "pinyin": "dào",
+        "hanzi": "道",
+        "german": "Weg",
+        "timestamp": "2012-12-27T16:03:23.062Z"
+    },
+    {
+        "pinyin": "zhǐ",
+        "hanzi": "只",
+        "german": "nur",
+        "timestamp": "2012-12-27T16:03:23.062Z"
+    },
+    {
+        "pinyin": "zhè",
+        "hanzi": "这",
+        "german": "dieser, diese, dieses",
+        "timestamp": "2012-12-27T16:03:23.062Z"
+    },
+    {
+        "pinyin": "nà",
+        "hanzi": "那",
+        "german": "jener, jene, jenes",
+        "timestamp": "2012-12-27T16:03:23.062Z"
+    },
+    {
+        "pinyin": "nǎ",
+        "hanzi": "哪",
+        "german": "welcher, welche, welches",
+        "timestamp": "2012-12-27T16:03:23.062Z"
+    },
+    {
+        "pinyin": "rè",
+        "hanzi": "热",
+        "german": "warm, heiß; Wärme, Hitze",
+        "timestamp": "2012-12-27T16:03:23.062Z"
+    },
+    {
+        "pinyin": "lěng",
+        "hanzi": "冷",
+        "german": "kalt",
+        "timestamp": "2012-12-27T16:03:23.062Z"
+    },
+    {
+        "pinyin": "sòng",
+        "hanzi": "送",
+        "german": "schenken",
+        "timestamp": "2012-12-27T20:51:51.294Z"
+    },
+    {
+        "pinyin": "de",
+        "hanzi": "的",
+        "german": "Partikel (Attribute)",
+        "timestamp": "2012-12-27T20:51:51.294Z"
+    },
+    {
+        "pinyin": "bēi",
+        "hanzi": "杯",
+        "german": "Tasse, Becher",
+        "timestamp": "2012-12-27T20:51:51.294Z"
+    },
+    {
+        "pinyin": "hé",
+        "hanzi": "和",
+        "german": "und; harmonisch",
+        "timestamp": "2012-12-28T07:06:52.200Z"
+    },
+    {
+        "pinyin": "yóu",
+        "hanzi": "由",
+        "german": "wegen; Grund, Ursache",
+        "timestamp": "2012-12-28T07:06:52.200Z"
+    },
+    {
+        "pinyin": "yuán",
+        "hanzi": "员",
+        "german": "Mitglied; Mitarbeiter",
+        "timestamp": "2012-12-28T18:37:16.284Z"
+    },
+    {
+        "pinyin": "zuò",
+        "hanzi": "作",
+        "german": "künstlerisches Werk",
+        "timestamp": "2012-12-28T18:37:16.284Z"
+    },
+    {
+        "pinyin": "shuài",
+        "hanzi": "帅",
+        "german": "gutaussehend (Mann); Oberbefehlshaber",
+        "timestamp": "2012-12-28T18:37:16.284Z"
+    },
+    {
+        "pinyin": "shòu",
+        "hanzi": "售",
+        "german": "verkaufen",
+        "timestamp": "2012-12-29T15:41:05.876Z"
+    },
+    {
+        "pinyin": "gòng",
+        "hanzi": "共",
+        "german": "zusammen, gemeinsam",
+        "timestamp": "2012-12-29T15:41:05.876Z"
+    },
+    {
+        "pinyin": "qián",
+        "hanzi": "钱",
+        "german": "Geld",
+        "timestamp": "2012-12-30T15:57:41.228Z"
+    },
+    {
+        "pinyin": "zhí",
+        "hanzi": "值",
+        "german": "wert sein, sich lohnen; Wert",
+        "timestamp": "2012-12-30T15:57:41.228Z"
+    },
+    {
+        "pinyin": "pián",
+        "hanzi": "便",
+        "german": "passend, angenehm",
+        "timestamp": "2012-12-31T12:10:11.168Z"
+    },
+    {
+        "pinyin": "yí",
+        "hanzi": "宜",
+        "german": "passend, angenehm",
+        "timestamp": "2012-12-31T12:10:11.168Z"
+    },
+    {
+        "pinyin": "dī",
+        "hanzi": "低",
+        "german": "tief, niedrig; etwas senken",
+        "timestamp": "2013-01-01T15:47:16.420Z"
+    },
+    {
+        "pinyin": "dōu",
+        "hanzi": "都",
+        "german": "alle, ganz",
+        "timestamp": "2013-01-01T15:47:16.420Z"
+    },
+    {
+        "pinyin": "yòng",
+        "hanzi": "用",
+        "german": "benutzen, gebrauchen; neg.: nicht müssen",
+        "timestamp": "2013-01-02T15:29:08.126Z"
+    },
+    {
+        "pinyin": "hóng",
+        "hanzi": "红",
+        "german": "rot; revolutionär",
+        "timestamp": "2013-01-02T15:29:08.126Z"
+    },
+    {
+        "pinyin": "kè",
+        "hanzi": "客",
+        "german": "Gast; objektiv",
+        "timestamp": "2013-01-03T18:23:46.628Z"
+    },
+    {
+        "pinyin": "huò",
+        "hanzi": "货",
+        "german": "Ware",
+        "timestamp": "2013-01-03T18:23:46.628Z"
+    },
+    {
+        "pinyin": "kāi",
+        "hanzi": "开",
+        "german": "öffnen, einschalten, ...",
+        "timestamp": "2013-01-04T18:02:49.664Z"
+    },
+    {
+        "pinyin": "lái",
+        "hanzi": "来",
+        "german": "kommen",
+        "timestamp": "2013-01-04T18:02:49.664Z"
+    },
+    {
+        "pinyin": "zhù",
+        "hanzi": "祝",
+        "german": "wünschen, beglückwünschen",
+        "timestamp": "2013-01-05T16:11:48.620Z"
+    },
+    {
+        "pinyin": "shēng",
+        "hanzi": "生",
+        "german": "gebären, leben; roh",
+        "timestamp": "2013-01-05T16:11:48.620Z"
+    },
+    {
+        "pinyin": "rì",
+        "hanzi": "日",
+        "german": "Sonne, Tag",
+        "timestamp": "2013-01-05T16:11:48.620Z"
+    },
+    {
+        "pinyin": "bái",
+        "hanzi": "白",
+        "german": "weiß, klar, vergeblich",
+        "timestamp": "2013-01-06T11:26:54.586Z"
+    },
+    {
+        "pinyin": "kuài",
+        "hanzi": "快",
+        "german": "vergnügt, schnell, bald; sich beeilen",
+        "timestamp": "2013-01-06T11:26:54.586Z"
+    },
+    {
+        "pinyin": "lè",
+        "hanzi": "乐",
+        "german": "froh; Spaß haben",
+        "timestamp": "2013-01-06T11:26:54.586Z"
+    },
+    {
+        "pinyin": "jià",
+        "hanzi": "价",
+        "german": "Preis, Wert",
+        "timestamp": "2013-01-07T20:09:37.771Z"
+    },
+    {
+        "pinyin": "gé",
+        "hanzi": "格",
+        "german": "Norm, gitterförmig, Karomuster",
+        "timestamp": "2013-01-07T20:09:37.771Z"
+    },
+    {
+        "pinyin": "liǎng",
+        "hanzi": "两",
+        "german": "zwei (bei Mengenangaben)",
+        "timestamp": "2013-01-08T19:10:13.510Z"
+    },
+    {
+        "pinyin": "zhēn",
+        "hanzi": "真",
+        "german": "wirklich, echt",
+        "timestamp": "2013-01-08T19:10:13.510Z"
+    },
+    {
+        "pinyin": "xiǎng",
+        "hanzi": "想",
+        "german": "mögen, wollen, denken, vermissen",
+        "timestamp": "2013-01-08T19:26:08.150Z"
+    },
+    {
+        "pinyin": "chī",
+        "hanzi": "吃",
+        "german": "essen",
+        "timestamp": "2013-01-09T20:39:43.284Z"
+    },
+    {
+        "pinyin": "néng",
+        "hanzi": "能",
+        "german": "können, dürfen; Fähigkeit",
+        "timestamp": "2013-01-10T19:37:29.417Z"
+    },
+    {
+        "pinyin": "bàn",
+        "hanzi": "半",
+        "german": "halb; Hälfte",
+        "timestamp": "2013-01-10T19:37:29.417Z"
+    },
+    {
+        "pinyin": "péng",
+        "hanzi": "朋",
+        "german": "Freund",
+        "timestamp": "2013-01-11T18:00:01.310Z"
+    },
+    {
+        "pinyin": "yǒu",
+        "hanzi": "友",
+        "german": "freundschaftlich",
+        "timestamp": "2013-01-11T18:00:01.310Z"
+    },
+    {
+        "pinyin": "huā",
+        "hanzi": "花",
+        "german": "aufwenden (Zeit, Geld); Blume; gemustert",
+        "timestamp": "2013-01-12T18:25:01.271Z"
+    },
+    {
+        "pinyin": "shì",
+        "hanzi": "市",
+        "german": "Markt, Stadt",
+        "timestamp": "2013-01-13T19:57:15.426Z"
+    },
+    {
+        "pinyin": "chǎng",
+        "hanzi": "场",
+        "german": "Platz; ZEW für Vorführungen",
+        "timestamp": "2013-01-13T19:57:15.426Z"
+    },
+    {
+        "pinyin": "diǎn",
+        "hanzi": "点",
+        "german": "Punkt, Tropfen; etwas; Essen bestellen; Uhr (Stunde)",
+        "timestamp": "2013-01-14T20:02:10.168Z"
+    },
+    {
+        "pinyin": "hē",
+        "hanzi": "喝",
+        "german": "trinken",
+        "timestamp": "2013-01-15T18:29:17.583Z"
+    },
+    {
+        "pinyin": "láo",
+        "hanzi": "劳",
+        "german": "arbeiten, sich plagen; Arbeit, Mühe",
+        "timestamp": "2013-01-16T17:28:52.908Z"
+    },
+    {
+        "pinyin": "jiù",
+        "hanzi": "就",
+        "german": "eben, genau, sofort, dann, nur",
+        "timestamp": "2013-01-17T19:18:13.655Z"
+    },
+    {
+        "pinyin": "màn",
+        "hanzi": "慢",
+        "german": "langsam",
+        "timestamp": "2013-01-18T18:21:53.576Z"
+    },
+    {
+        "pinyin": "zǒu",
+        "hanzi": "走",
+        "german": "gehen, weggehen, losgehen",
+        "timestamp": "2013-01-18T18:21:53.576Z"
+    },
+    {
+        "pinyin": "cì",
+        "hanzi": "次",
+        "german": "Mal",
+        "timestamp": "2013-01-18T18:21:53.576Z"
+    },
+    {
+        "pinyin": "dìng",
+        "hanzi": "定",
+        "german": "festlegen; ruhig, gewiss",
+        "timestamp": "2013-01-18T18:21:53.576Z"
+    },
+    {
+        "pinyin": "kǔ",
+        "hanzi": "苦",
+        "german": "bitter, hart; sein Möglichstes tun, unter etwas leiden; Leid",
+        "timestamp": "2013-01-19T17:45:47.346Z"
+    },
+    {
+        "pinyin": "jué",
+        "hanzi": "觉",
+        "german": "spüren, empfinden",
+        "timestamp": "2013-01-19T17:45:47.346Z"
+    },
+    {
+        "pinyin": "dé",
+        "hanzi": "得",
+        "german": "bekommen; es macht (Mathematik); fertig, basta; Komplementpartikel",
+        "timestamp": "2013-01-20T18:27:27.429Z"
+    },
+    {
+        "pinyin": "ài",
+        "hanzi": "爱",
+        "german": "lieben, gerne haben",
+        "timestamp": "2013-01-21T19:47:52.419Z"
+    },
+    {
+        "pinyin": "gōng",
+        "hanzi": "功",
+        "german": "Beitrag, Verdienst, Leistung",
+        "timestamp": "2013-01-22T16:04:37.514Z"
+    },
+    {
+        "pinyin": "jiè",
+        "hanzi": "介",
+        "german": "jmd. mit jmd. bekannt machen; zwischen",
+        "timestamp": "2013-01-23T20:32:32.120Z"
+    },
+    {
+        "pinyin": "shào",
+        "hanzi": "绍",
+        "german": "weitermachen, fortführen",
+        "timestamp": "2013-01-23T20:32:32.120Z"
+    },
+    {
+        "pinyin": "xià",
+        "hanzi": "下",
+        "german": "mal; hinunter; aussteigen, etw. beenden; weniger als; folgend, nächst",
+        "timestamp": "2013-01-23T20:32:32.120Z"
+    },
+    {
+        "pinyin": "gào",
+        "hanzi": "告",
+        "german": "jdm. etw. sagen, mitteilen, jdn. informieren",
+        "timestamp": "2013-01-24T14:47:25.130Z"
+    },
+    {
+        "pinyin": "ān",
+        "hanzi": "安",
+        "german": "Frieden; friedlich; sich beruhigen",
+        "timestamp": "2013-01-25T18:15:56.152Z"
+    },
+    {
+        "pinyin": "pái",
+        "hanzi": "排",
+        "german": "in Reihen ordnen; Reihe",
+        "timestamp": "2013-01-25T18:15:56.152Z"
+    },
+    {
+        "pinyin": "mén",
+        "hanzi": "门",
+        "german": "Tor, Tür; ZEW für Geschütze, Eheschließungen, Fächer (Wissenschaft), Studiengänge",
+        "timestamp": "2013-01-26T17:35:23.768Z"
+    },
+    {
+        "pinyin": "lì",
+        "hanzi": "历",
+        "german": "Zeitrechnung, Kalender",
+        "timestamp": "2013-01-26T17:35:23.768Z"
+    },
+    {
+        "pinyin": "zǎo",
+        "hanzi": "早",
+        "german": "Morgen; früh, längst",
+        "timestamp": "2013-01-27T17:12:10.997Z"
+    },
+    {
+        "pinyin": "shí",
+        "hanzi": "时",
+        "german": "Zeit, Uhrzeit, Jahreszeit; zeitweilig",
+        "timestamp": "2013-01-27T17:12:10.997Z"
+    },
+    {
+        "pinyin": "sù",
+        "hanzi": "诉",
+        "german": "jdm. etwas mitteilen, sich beklagen, jdn. anklagen",
+        "timestamp": "2013-01-28T19:58:45.908Z"
+    },
+    {
+        "pinyin": "yuè",
+        "hanzi": "月",
+        "german": "Monat, Mond",
+        "timestamp": "2013-01-29T17:56:23.148Z"
+    },
+    {
+        "pinyin": "suì",
+        "hanzi": "岁",
+        "german": "(Lebens-)Jahr (Alter)",
+        "timestamp": "2013-01-29T17:56:23.148Z"
+    },
+    {
+        "pinyin": "wǔ",
+        "hanzi": "午",
+        "german": "Mittag",
+        "timestamp": "2013-01-30T17:55:18.998Z"
+    },
+    {
+        "pinyin": "shàng",
+        "hanzi": "上",
+        "german": "oben, hinauf",
+        "timestamp": "2013-01-31T18:00:15.514Z"
+    },
+    {
+        "pinyin": "jiān",
+        "hanzi": "间",
+        "german": "zwischen; Raum, Zimmer; ZEW für Zimmer",
+        "timestamp": "2013-02-01T17:52:21.416Z"
+    },
+    {
+        "pinyin": "wǎn",
+        "hanzi": "晚",
+        "german": "Abend; spät",
+        "timestamp": "2013-02-02T17:20:56.578Z"
+    },
+    {
+        "pinyin": "yán",
+        "hanzi": "言",
+        "german": "Wort, Rede; sprechen",
+        "timestamp": "2013-02-02T17:20:56.578Z"
+    },
+    {
+        "pinyin": "cān",
+        "hanzi": " 参",
+        "german": "mitmachen, sich beteiligen",
+        "timestamp": "2013-02-03T16:37:55.505Z"
+    },
+    {
+        "pinyin": "qù",
+        "hanzi": "去",
+        "german": "(hin-)gehen, etw. beseitigen; voriger",
+        "timestamp": "2013-02-03T16:37:55.505Z"
+    },
+    {
+        "pinyin": "fēn",
+        "hanzi": "分",
+        "german": "Fen (Währung); etw. aufteilen, verteilen, unterscheiden; Filiale, Bruchzahl, Minute",
+        "timestamp": "2013-02-04T20:07:03.023Z"
+    },
+    {
+        "pinyin": "sàn",
+        "hanzi": "散",
+        "german": "etw. zerstreuen, auflösen, verbreiten",
+        "timestamp": "2013-02-05T17:51:20.438Z"
+    },
+    {
+        "pinyin": "huí",
+        "hanzi": "回",
+        "german": "zurückkommen, jdm. antworten, ZEW Mal, sich drehen jdn. entlassen",
+        "timestamp": "2013-02-07T18:11:15.325Z"
+    },
+    {
+        "pinyin": "nián",
+        "hanzi": "年",
+        "german": "Jahr",
+        "timestamp": "2013-02-10T17:44:59.863Z"
+    },
+    {
+        "pinyin": "fàn",
+        "hanzi": "饭",
+        "german": "Speise, (gekochter) Reis, Mahlzeit",
+        "timestamp": "2013-02-11T19:27:42.225Z"
+    },
+    {
+        "pinyin": "gè",
+        "hanzi": "各",
+        "german": "jeder; verschieden; jeweils",
+        "timestamp": "2013-02-14T19:33:29.370Z"
+    },
+    {
+        "pinyin": "xiě",
+        "hanzi": "写",
+        "german": "schreiben, verfassen",
+        "timestamp": "2013-02-15T17:15:28.910Z"
+    },
+    {
+        "pinyin": "dú",
+        "hanzi": "读",
+        "german": "lesen",
+        "timestamp": "2013-02-16T20:21:44.336Z"
+    },
+    {
+        "pinyin": "zài",
+        "hanzi": "在",
+        "german": "an, auf, in",
+        "timestamp": "2013-02-17T17:29:45.742Z"
+    },
+    {
+        "pinyin": "duì",
+        "hanzi": "对",
+        "german": "gegenüber, gegen, zu, für; OK, richtig, korrekt",
+        "timestamp": "2013-02-18T20:01:46.493Z"
+    },
+    {
+        "pinyin": "yǐ",
+        "hanzi": "以",
+        "german": "durch, mittels, nach, um zu, wegen",
+        "timestamp": "2013-02-19T18:09:36.017Z"
+    },
+    {
+        "pinyin": "guān",
+        "hanzi": "观",
+        "german": "etw. anschauen, etw. beobachten, Sicht",
+        "timestamp": "2013-02-24T14:06:20.554Z"
+    },
+    {
+        "pinyin": "xīn",
+        "hanzi": "心",
+        "german": "Herz, Sinn, Zentrum",
+        "timestamp": "2013-02-24T14:06:20.554Z"
+    },
+    {
+        "pinyin": "fèn",
+        "hanzi": "份",
+        "german": "Portion, ZEW für Essen",
+        "timestamp": "2013-03-03T17:19:01.051Z"
+    },
+    {
+        "pinyin": "dān",
+        "hanzi": "单",
+        "german": "Liste; einzeln, ungerade",
+        "timestamp": "2013-03-09T19:20:07.562Z"
+    },
+    {
+        "pinyin": "jiǔ",
+        "hanzi": "酒",
+        "german": "Alkohol, Wein, alkoholisches Getränk",
+        "timestamp": "2013-03-10T17:15:06.751Z"
+    },
+    {
+        "pinyin": "niú",
+        "hanzi": "牛",
+        "german": "Kuh, Rind; störrisch, eingebildet",
+        "timestamp": "2013-03-17T19:04:14.036Z"
+    },
+    {
+        "pinyin": "mǐ",
+        "hanzi": "米",
+        "german": "Reis, Meter; Familienname",
+        "timestamp": "2013-03-18T19:41:18.044Z"
+    },
+    {
+        "pinyin": "wén",
+        "hanzi": "文",
+        "german": "Schriftstück, Dokument, (geschriebene) Sprache",
+        "timestamp": "2013-03-19T18:18:46.034Z"
+    },
+    {
+        "pinyin": "běn",
+        "hanzi": "本",
+        "german": "Wurzel, Ursprung; eigener, dieser; ZEW für gebundene Druckerzeugnisse",
+        "timestamp": "2013-03-20T18:13:51.163Z"
+    },
+    {
+        "pinyin": "xìn",
+        "hanzi": "信",
+        "german": "Glaube, Vertrauen; gläubig sein; Brief, Information",
+        "timestamp": "2013-03-21T19:33:41.155Z"
+    },
+    {
+        "pinyin": "shī",
+        "hanzi": "师",
+        "german": "Lehrer, Meister",
+        "timestamp": "2013-03-22T19:01:24.682Z"
+    },
+    {
+        "pinyin": "kǎ",
+        "hanzi": "卡",
+        "german": "Karte, LKW",
+        "timestamp": "2013-03-23T15:19:22.686Z"
+    },
+    {
+        "pinyin": "ròu",
+        "hanzi": "肉",
+        "german": "Fleisch",
+        "timestamp": "2013-03-24T13:27:36.925Z"
+    },
+    {
+        "pinyin": "fù",
+        "hanzi": "付",
+        "german": "bezahlen, etw. aushändigen",
+        "timestamp": "2013-03-25T19:39:41.842Z"
+    },
+    {
+        "pinyin": "zěn",
+        "hanzi": "怎",
+        "german": "wie, auf welche Art",
+        "timestamp": "2013-03-26T15:59:51.471Z"
+    },
+    {
+        "pinyin": "jǐ",
+        "hanzi": "几",
+        "german": "wie viel; einige",
+        "timestamp": "2013-03-27T17:19:57.090Z"
+    },
+    {
+        "pinyin": "ér",
+        "hanzi": "儿",
+        "german": "Sohn, Kind; [Diminutiv-Suffix]",
+        "timestamp": "2013-03-28T18:03:43.138Z"
+    },
+    {
+        "pinyin": "huì",
+        "hanzi": "会",
+        "german": "können (Fähigkeit); zusammenkommen, Sitzung",
+        "timestamp": "2013-03-29T15:13:50.577Z"
+    },
+    {
+        "pinyin": "guǎn",
+        "hanzi": "馆",
+        "german": "Gasthaus, Halle, Saal",
+        "timestamp": "2013-03-30T09:50:41.451Z"
+    },
+    {
+        "pinyin": "miàn",
+        "hanzi": "面",
+        "german": "Mehl, Nudel, Gesicht, Miene, Seite, Oberfläche",
+        "timestamp": "2013-03-30T19:27:44.481Z"
+    },
+    {
+        "pinyin": "gōng",
+        "hanzi": "工",
+        "german": "Arbeit",
+        "timestamp": "2013-04-01T16:05:38.277Z"
+    },
+    {
+        "pinyin": "yú",
+        "hanzi": "鱼",
+        "german": "Fisch",
+        "timestamp": "2013-04-07T17:03:40.836Z"
+    },
+    {
+        "pinyin": "zhù",
+        "hanzi": "住",
+        "german": "wohnen, bewohnen",
+        "timestamp": "2013-04-08T18:52:35.992Z"
+    },
+    {
+        "pinyin": "zuò",
+        "hanzi": "做",
+        "german": "machen, herstellen, zubereiten, als etw. dienen",
+        "timestamp": "2013-04-09T14:53:55.592Z"
+    },
+    {
+        "pinyin": "nà",
+        "hanzi": "纳",
+        "german": "(eine Sache) annehmen, etw. entrichten (Steuer)",
+        "timestamp": "2013-04-13T17:13:46.016Z"
+    },
+    {
+        "pinyin": "sī",
+        "hanzi": "司",
+        "german": "leiten, führen",
+        "timestamp": "2013-04-15T16:53:12.317Z"
+    },
+    {
+        "pinyin": "dāo",
+        "hanzi": "刀",
+        "german": "Messer",
+        "timestamp": "2013-04-22T18:49:12.915Z"
+    },
+    {
+        "pinyin": "zǒng",
+        "hanzi": "总",
+        "german": "zusammenfassen, insgesamt",
+        "timestamp": "2013-04-28T19:00:14.610Z"
+    },
+    {
+        "pinyin": "fā",
+        "hanzi": "发",
+        "german": "senden, absenden",
+        "timestamp": "2013-05-06T19:45:30.702Z"
+    },
+    {
+        "pinyin": "diàn",
+        "hanzi": "电",
+        "german": "Strom, elektrisch",
+        "timestamp": "2013-05-13T19:25:29.964Z"
+    },
+    {
+        "pinyin": "jì",
+        "hanzi": "计",
+        "german": "zählen, rechnen, planen; Messgerät; List",
+        "timestamp": "2013-05-16T19:07:03.227Z"
+    },
+    {
+        "pinyin": "fù",
+        "hanzi": "负",
+        "german": "etw. schultern, erleiden, über etw. verfügen, jmd. etw. schulden",
+        "timestamp": "2013-05-18T08:49:14.026Z"
+    },
+    {
+        "pinyin": "zé",
+        "hanzi": "责",
+        "german": "Verantwortung, Pflicht",
+        "timestamp": "2013-05-23T18:04:56.332Z"
+    },
+    {
+        "pinyin": "xiàng",
+        "hanzi": "项",
+        "german": "Nacken, Geldsumme, Glied",
+        "timestamp": "2013-05-25T15:02:21.298Z"
+    },
+    {
+        "pinyin": "mù",
+        "hanzi": "目",
+        "german": "Auge, Detail, Liste, Verzeichnis",
+        "timestamp": "2013-05-27T18:52:29.246Z"
+    },
+    {
+        "pinyin": "piàn",
+        "hanzi": "片",
+        "german": "Scheibe",
+        "timestamp": "2013-05-30T15:05:18.077Z"
+    },
+    {
+        "pinyin": "suàn",
+        "hanzi": "算",
+        "german": "zählen, berechnen, planen, mit etw. rechnen",
+        "timestamp": "2013-06-10T17:32:29.482Z"
+    },
+    {
+        "pinyin": "kōng",
+        "hanzi": "空",
+        "german": "leer, vakant, ohne Inhalt",
+        "timestamp": "2013-07-06T15:16:34.351Z"
+    },
+    {
+        "pinyin": "zhēng",
+        "hanzi": "正",
+        "german": "echt, aufrichtig, senkrecht, gerade, aufrecht",
+        "timestamp": "2013-08-04T17:23:33.891Z"
+    },
+    {
+        "pinyin": "nǚ",
+        "hanzi": "女",
+        "german": "weiblich; Tochter, Frau, Mädchen",
+        "timestamp": "2013-08-08T17:40:22.513Z"
+    },
+    {
+        "pinyin": "guǒ",
+        "hanzi": "果",
+        "german": "Frucht, Resultat",
+        "timestamp": "2013-08-10T16:00:49.056Z"
+    },
+    {
+        "pinyin": "cài",
+        "hanzi": "菜",
+        "german": "Gemüse, Essen, Gericht",
+        "timestamp": "2013-08-13T18:33:43.226Z"
+    },
+    {
+        "pinyin": "tái",
+        "hanzi": "台",
+        "german": "ZEW für Geräte und Maschinen; Plattform, Bühne, Sender",
+        "timestamp": "2013-08-18T16:55:51.206Z"
+    },
+    {
+        "pinyin": "nèi",
+        "hanzi": "内",
+        "german": "in, innerhalb, intern",
+        "timestamp": "2013-08-24T17:04:41.483Z"
+    },
+    {
+        "pinyin": "wèi",
+        "hanzi": "位",
+        "german": "höfliches ZEW für Personen; Platz, Sitz",
+        "timestamp": "2013-08-25T13:08:03.332Z"
+    },
+    {
+        "pinyin": "rèn",
+        "hanzi": "认",
+        "german": "erkennen, anerkennen, zugeben",
+        "timestamp": "2013-09-07T16:40:27.578Z"
+    },
+    {
+        "pinyin": "gān",
+        "hanzi": "干",
+        "german": "",
+        "timestamp": "2013-09-23T19:13:50.606Z"
+    },
+    {
+        "pinyin": "rú",
+        "hanzi": "如",
+        "german": "so gut wie (nur verneint), wie",
+        "timestamp": "2013-10-10T19:17:21.218Z"
+    },
+    {
+        "pinyin": "ma",
+        "hanzi": "嘛",
+        "german": "Partikel, der anzeigt dass etwas offensichtlich ist",
+        "timestamp": "2013-10-14T18:12:21.234Z"
+    },
+    {
+        "pinyin": "fǒu",
+        "hanzi": "否",
+        "german": "nein",
+        "timestamp": "2013-10-14T18:12:21.234Z"
+    },
+    {
+        "pinyin": "méi",
+        "hanzi": "没",
+        "german": "nicht (Verneinung bei \"haben\")",
+        "timestamp": "2013-10-18T19:15:28.723Z"
+    },
+    {
+        "pinyin": "tián",
+        "hanzi": "田",
+        "german": "Feld",
+        "timestamp": "2013-10-20T17:51:45.933Z"
+    },
+    {
+        "pinyin": "tiān",
+        "hanzi": "添 ",
+        "german": "hinzufügen, dazugeben",
+        "timestamp": "2013-10-20T17:51:45.933Z"
+    },
+    {
+        "pinyin": "wǎng",
+        "hanzi": "网",
+        "german": "Netz, Maschen",
+        "timestamp": "2013-10-22T17:26:12.455Z"
+    },
+    {
+        "pinyin": "nǎo",
+        "hanzi": "脑",
+        "german": "Gehirn, Kopf",
+        "timestamp": "2013-11-02T17:33:38.050Z"
+    },
+    {
+        "pinyin": "huǒ",
+        "hanzi": "火",
+        "german": "Feuer, innere Hitze, Wut",
+        "timestamp": "2013-11-02T17:33:38.050Z"
+    },
+    {
+        "pinyin": "dāng",
+        "hanzi": "当",
+        "german": "etw. sollte/müsste; tätig sein als",
+        "timestamp": "2013-11-04T16:03:52.051Z"
+    },
+    {
+        "pinyin": "cháng",
+        "hanzi": "长",
+        "german": "lang (Ausmaß), lange (Dauer)",
+        "timestamp": "2013-11-21T18:08:46.100Z"
+    },
+    {
+        "pinyin": "cóng",
+        "hanzi": "从",
+        "german": "von, jemals, folgen",
+        "timestamp": "2013-11-25T16:26:04.620Z"
+    },
+    {
+        "pinyin": "dào",
+        "hanzi": "到",
+        "german": "nach, bis, ankommen",
+        "timestamp": "2013-11-25T16:26:04.620Z"
+    },
+    {
+        "pinyin": "wèi",
+        "hanzi": "为",
+        "german": "wegen, für jdn. / etw.; jdn. unterstützen",
+        "timestamp": "2013-11-30T15:32:34.967Z"
+    },
+    {
+        "pinyin": "zhǎo",
+        "hanzi": "找",
+        "german": "suchen, aufsuchen, besuchen",
+        "timestamp": "2013-12-02T16:01:44.904Z"
+    },
+    {
+        "pinyin": "gōng",
+        "hanzi": "公",
+        "german": "amtlich, staatlich, öffentlich",
+        "timestamp": "2013-12-08T15:17:99.004Z"
+    },
+    {
+        "pinyin": "bǐ",
+        "hanzi": "比",
+        "german": "als, etwas / jdn. mit etwas / jdm. vergleichen, sich messen, (es steht) ... zu ..., Verhältnis",
+        "timestamp": "2013-12-15T14:30:38.467Z"
+    },
+    {
+        "pinyin": "ruǎn",
+        "hanzi": "软",
+        "german": "weich",
+        "timestamp": "2013-12-25T15:51:03.373Z"
+    },
+    {
+        "pinyin": "xiū",
+        "hanzi": "休",
+        "german": "ausruhen, mit etw. aufhören",
+        "timestamp": "2014-01-04T10:35:11.508Z"
+    },
+    {
+        "pinyin": "xī",
+        "hanzi": "息 ",
+        "german": "Pause machen; Atem, Information, Zins",
+        "timestamp": "2014-01-07T16:10:05.403Z"
+    },
+    {
+        "pinyin": "zhù",
+        "hanzi": "助",
+        "german": "helfen, unterstützen",
+        "timestamp": "2014-01-13T18:42:41.889Z"
+    },
+    {
+        "pinyin": "shuāng",
+        "hanzi": "双",
+        "german": "das Paar; ZEW für Paare und Dinge in Paaren",
+        "timestamp": "2014-01-20T20:45:53.695Z"
+    },
+    {
+        "pinyin": "dēng",
+        "hanzi": "灯",
+        "german": "Lampe, elektrisches Licht",
+        "timestamp": "2014-01-20T20:45:53.695Z"
+    },
+    {
+        "pinyin": "bīng",
+        "hanzi": "冰",
+        "german": "Eis; etw. kühlen (mit Eis)",
+        "timestamp": "2014-01-22T20:48:37.712Z"
+    },
+    {
+        "pinyin": "diàn",
+        "hanzi": "店",
+        "german": "Laden, Geschäft",
+        "timestamp": "2014-01-27T16:47:52.808Z"
+    },
+    {
+        "pinyin": "zhí",
+        "hanzi": "直",
+        "german": "direkt, gerade, aufrecht, senkrecht, aufrichtig; ständig; Familienname",
+        "timestamp": "2014-01-31T16:58:42.049Z"
+    },
+    {
+        "pinyin": "qì",
+        "hanzi": "汽",
+        "german": "(Wasser-)Dampf",
+        "timestamp": "2014-02-03T15:44:57.312Z"
+    },
+    {
+        "pinyin": "chē",
+        "hanzi": "车",
+        "german": "Wagen, Fahrzeug, Räderwerk, Maschine",
+        "timestamp": "2014-02-03T15:44:57.312Z"
+    },
+    {
+        "pinyin": "biàn",
+        "hanzi": "便",
+        "german": "passend, angenehm; auf die Toilette müssen",
+        "timestamp": "2014-02-09T12:24:00.299Z"
+    },
+    {
+        "pinyin": "chǎo",
+        "hanzi": "吵",
+        "german": "Lärm machen, stören, streiten",
+        "timestamp": "2014-02-10T16:33:17.933Z"
+    },
+    {
+        "pinyin": "wèi",
+        "hanzi": "卫",
+        "german": "etw. abwehren, verteidigen, beschützen, bewahren; Abwehr (Sport); Familienname",
+        "timestamp": "2014-02-17T16:59:22.710Z"
+    },
+    {
+        "pinyin": "gǎn",
+        "hanzi": "赶",
+        "german": "jdn. einholen, sich mit etw. beeilen, antreiben, mit etw. fahren",
+        "timestamp": "2014-02-22T11:36:17.979Z"
+    },
+    {
+        "pinyin": "wǎng",
+        "hanzi": "往",
+        "german": "(in Richtung) auf, nach, zu, vergangen, vorbei, gehen",
+        "timestamp": "2014-02-24T15:24:07.974Z"
+    },
+    {
+        "pinyin": "hé",
+        "hanzi": "河",
+        "german": "Fluss",
+        "timestamp": "2014-03-08T15:29:23.224Z"
+    }
+]
