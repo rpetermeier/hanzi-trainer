@@ -1624,5 +1624,29 @@
         "hanzi": "河",
         "german": "Fluss",
         "timestamp": "2014-03-08T15:29:23.224Z"
+    },
+    {
+        "pinyin": "zuǒ",
+        "hanzi": "左",
+        "german": "links, linke Seite",
+        "timestamp": "2014-03-09T10:08:42.811Z"
+    },
+    {
+        "pinyin": "yòu",
+        "hanzi": "右",
+        "german": "rechts, rechte Seite",
+        "timestamp": "2014-03-09T10:08:42.811Z"
+    },
+    {
+        "pinyin": "guǎng",
+        "hanzi": "广",
+        "german": "weit, breit, ausgedehnt; ausbreiten",
+        "timestamp": "2014-03-10T10:09:13.676Z"
+    },
+    {
+        "pinyin": "piào",
+        "hanzi": "票",
+        "german": "(Eintritts-, Fahr-)Karte, Banknote, (Wahl-)Zettel",
+        "timestamp": "2014-03-15T10:11:17.263Z"
     }
 ]
