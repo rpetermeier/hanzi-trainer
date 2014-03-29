@@ -1672,9 +1672,11 @@
         "hanzi": "房",
         "german": "Haus, Zimmer; Familienname",
         "timestamp": "2014-03-23T20:03:02.690Z"
-    },{
-    "pinyin" : "fēi",
-    "hanzi" : "飞",
-    "german" : "fliegen"
-}
+    },
+    {
+        "pinyin": "fēi",
+        "hanzi": "飞",
+        "german": "fliegen",
+        "timestamp": "2014-03-29T11:41:14.905Z"
+    }
 ]
