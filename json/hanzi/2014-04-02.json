@@ -1678,5 +1678,17 @@
         "hanzi": "飞",
         "german": "fliegen",
         "timestamp": "2014-03-29T11:41:14.905Z"
+    },
+    {
+        "pinyin": "chū",
+        "hanzi": "出",
+        "german": "hinaus(-gehen)",
+        "timestamp": "2014-04-02T19:14:42.356Z"
+    },
+    {
+        "pinyin": "dì",
+        "hanzi": "地",
+        "german": "Erde, Boden, Ort, Land",
+        "timestamp": "2014-04-02T19:14:42.356Z"
     }
 ]
