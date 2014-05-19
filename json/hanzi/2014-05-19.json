@@ -1744,5 +1744,23 @@
         "hanzi": "正",
         "german": "gerade, genau, korrekt",
         "timestamp": "2014-05-18T18:05:54.087Z"
+    },
+    {
+        "pinyin": "cái",
+        "hanzi": "才",
+        "german": "gerade, erst, eben erst",
+        "timestamp": "2014-05-19T19:20:24.673Z"
+    },
+    {
+        "pinyin": "yǐ",
+        "hanzi": "已",
+        "german": "schon, bereits",
+        "timestamp": "2014-05-19T19:20:24.673Z"
+    },
+    {
+        "pinyin": "jīng",
+        "hanzi": "经",
+        "german": "etw. durchmachen; klassische Schrift; Meridiane",
+        "timestamp": "2014-05-19T19:20:24.673Z"
     }
 ]
