@@ -1786,5 +1786,35 @@
         "hanzi": "qiǎo",
         "german": "zufällig",
         "timestamp": "2014-05-31T15:24:29.663Z"
+    },
+    {
+        "pinyin": "guān",
+        "hanzi": "关",
+        "german": "schließen, zumachen, ausschalten",
+        "timestamp": "2014-06-021T09:17:31.021Z"
+    },
+    {
+        "pinyin": "wàng",
+        "hanzi": "忘",
+        "german": "vergessen",
+        "timestamp": "2014-06-02T09:17:31.021Z"
+    },
+    {
+        "pinyin": "jiè",
+        "hanzi": "借",
+        "german": "leihen, ausleihen",
+        "timestamp": "2014-06-02T09:17:31.021Z"
+    },
+    {
+        "pinyin": "fēng",
+        "hanzi": "风",
+        "german": "Wind",
+        "timestamp": "2014-06-21T09:21:03.109Z"
+    },
+    {
+        "pinyin": "nòng",
+        "hanzi": "弄",
+        "german": "machen, tun; bereiten",
+        "timestamp": "2014-06-21T09:21:03.109Z"
     }
 ]
