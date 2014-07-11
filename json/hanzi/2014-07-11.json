@@ -1758,12 +1758,6 @@
         "timestamp": "2014-05-19T19:20:24.673Z"
     },
     {
-        "pinyin": "jīng",
-        "hanzi": "经",
-        "german": "etw. durchmachen; klassische Schrift; Meridiane",
-        "timestamp": "2014-05-19T19:20:24.673Z"
-    },
-    {
         "pinyin": "ràng",
         "hanzi": "让",
         "german": "lassen, zulassen; Präposition",
@@ -1828,5 +1822,17 @@
         "hanzi": "进",
         "german": "eintreten, einnehmen, vorwärtsgehen",
         "timestamp": "2014-07-06T19:47:26.727Z"
+    },
+    {
+        "pinyin": "jīn",
+        "hanzi": "斤",
+        "german": "Pfund (500 g)",
+        "timestamp": "2014-07-11T07:18:36.015Z"
+    },
+    {
+        "pinyin": "dài",
+        "hanzi": "带",
+        "german": "bringen, mitbringen; führen, leiten",
+        "timestamp": "2014-07-11T07:18:36.015Z"
     }
 ]
