@@ -1,36 +1,29 @@
 h1 {
-	font-family: sans-serif;
+  font-family: sans-serif;
 }
-
 blockquote {
-	font-size: 0.75em;
+  font-size: 0.75em;
 }
-
 .marked-text {
-	font-style: italic;
+  font-style: italic;
 }
-
 .machine-text {
-	font-family: Courier New;
+  font-family: Courier New;
 }
-
 #ta-pinyin {
-	background: PapayaWhip;
-	color: DarkSlateGray;
+  background: PapayaWhip;
+  color: DarkSlateGray;
 }
-
 #headline {
-	font-size: 2em;
-	font-family: sans-serif;
-	font-weight: bold;
+  font-size: 2em;
+  font-family: sans-serif;
+  font-weight: bold;
 }
-
 #headline img {
-	vertical-align: middle;
-	padding: 5px;
+  vertical-align: middle;
+  padding: 5px;
 }
-
 #img-help {
-	/* border: 1px dashed Black; */
-	vertical-align: middle;
+  /* border: 1px dashed Black; */
+  vertical-align: middle;
 }

@@ -1,85 +1,78 @@
 /* Necessary for alignment of labels with input fields */
-.filter-area label, .filter-area input {
+.filter-area label,
+.filter-area input {
   display: inline-block;
 }
 .filter-area label {
   width: 120px;
 }
-
 h1 {
-	font-family: sans-serif;
+  font-family: sans-serif;
 }
-
 #number-of-hanzi-to-generate {
-	width: 35px;
+  width: 35px;
 }
-
-#total-number-of-hanzi, #date-of-newest-hanzi {
-	color: maroon;
-	font-weight: bold;
+#total-number-of-hanzi,
+#date-of-newest-hanzi {
+  color: maroon;
+  font-weight: bold;
 }
-
 #date-of-newest-hanzi-info {
-	font-size: 0.75em;
+  font-size: 0.75em;
 }
-
 #intro-short {
-	font-weight: bold;
-	width: 450px;
+  font-weight: bold;
+  width: 450px;
 }
-
 .header-intro-short {
-	font-size: 1em;
-	font-weight: bold;
+  font-size: 1em;
+  font-weight: bold;
 }
-
 #headline {
-	font-size: 2em;
-	font-family: sans-serif;
-	font-weight: bold;
-	white-space: nowrap;
-	overflow: visible;
+  font-size: 2em;
+  font-family: sans-serif;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: visible;
 }
-
 #headline img {
-	vertical-align: middle;
-	padding-left: 5px;
-	padding-top: 5px;
-	padding-bottom: 5px;
+  vertical-align: middle;
+  padding-left: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
-
 span#license {
-	font-size: 0.75em;
+  font-size: 0.75em;
 }
-
 .ko-grid {
-    background-color: White;
-    border: 1px solid silver;
-    margin-bottom: 1em;
-    width: 25em;
+  background-color: White;
+  border: 1px solid silver;
+  margin-bottom: 1em;
+  width: 25em;
 }
 .ko-grid th {
-    background-color: Black;
-    color: White;
-    text-align: left;
+  background-color: Black;
+  color: White;
+  text-align: left;
 }
-.ko-grid td, th {
-    padding: 0.4em;
+.ko-grid td,
+th {
+  padding: 0.4em;
 }
 .ko-grid tr:nth-child(2n+1) {
-    background-color: #DDDDDD;
+  background-color: #DDDDDD;
 }
 .ko-grid-pageLinks {
-    margin-bottom: 1em;
+  margin-bottom: 1em;
 }
 .ko-grid-pageLinks a {
-    padding: 0.5em;
+  padding: 0.5em;
 }
 .ko-grid-pageLinks a.selected {
-    background-color: Black;
-    color: White;
+  background-color: Black;
+  color: White;
 }
 .liveExample {
-    height: 20em;
-    overflow: auto;
+  height: 20em;
+  overflow: auto;
 }
