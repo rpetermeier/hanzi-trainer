@@ -1912,5 +1912,41 @@
         "hanzi": "现",
         "german": "augenblicklich, jetzt, gegenwärtig",
         "timestamp": "2014-08-30T14:20:42.358Z"
+    },
+    {
+        "pinyin": "xǐ",
+        "hanzi": "洗",
+        "german": "baden, waschen",
+        "timestamp": "2014-09-08T15:36:43.899Z"
+    },
+    {
+        "pinyin": "ná",
+        "hanzi": "拿",
+        "german": "nehmen, ergreifen",
+        "timestamp": "2014-09-08T15:36:43.899Z"
+    },
+    {
+        "pinyin": "huà",
+        "hanzi": "画",
+        "german": "Gemälde, Bild",
+        "timestamp": "2014-09-14T16:45:34.566Z"
+    },
+    {
+        "pinyin": "yòu",
+        "hanzi": "又",
+        "german": "zusätzlich, außerdem; sowohl ... als auch ...",
+        "timestamp": "2014-09-14T16:45:34.566Z"
+    },
+    {
+        "pinyin": "xiào",
+        "hanzi": "校",
+        "german": "Schule",
+        "timestamp": "2014-09-19T14:36:44.697Z"
+    },
+    {
+        "pinyin": "lǐ",
+        "hanzi": "理",
+        "german": "ordnen, leiten, verwalten; Vernunft",
+        "timestamp": "2014-09-19T14:36:44.697Z"
     }
 ]
